@@ -120,7 +120,8 @@
     "jest-runner": "patch:jest-runner@npm:27.5.1#.yarn/patches/jest-runner-npm-27.5.1-2ed2c1cda8",
     "viem@2.39.0": "patch:viem@npm:2.39.0#.yarn/patches/viem-npm-2.39.0-c113f391fd",
     "date-fns": "4.1.0",
-    "lodash": "4.18.1"
+    "lodash": "4.18.1",
+    "node-gyp": "^11.0.0"
   },
   "eslintConfig": {
     "extends": [
