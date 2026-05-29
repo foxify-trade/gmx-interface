@@ -95,11 +95,17 @@ export function getTokenPoolType(
     return "long";
   }
 
-  if (tokenAddress === longToken.address || (tokenAddress === NATIVE_TOKEN_ADDRESS && longToken.isWrapped)) {
+  if (
+    tokenAddress === longToken.address ||
+    (tokenAddress === NATIVE_TOKEN_ADDRESS && longToken.isWrapped)
+  ) {
     return "long";
   }
 
-  if (tokenAddress === shortToken.address || (tokenAddress === NATIVE_TOKEN_ADDRESS && shortToken.isWrapped)) {
+  if (
+    tokenAddress === shortToken.address ||
+    (tokenAddress === NATIVE_TOKEN_ADDRESS && shortToken.isWrapped)
+  ) {
     return "short";
   }
 
@@ -340,7 +346,10 @@ export function getIsMarketAvailableForExpressSwaps(marketInfo: MarketInfo) {
 }
 
 export function getIsMarketDeprecated(marketInfo: MarketInfo) {
-  return marketInfo.maxOpenInterestLong <= expandDecimals(1n, 30) && marketInfo.maxOpenInterestShort <= expandDecimals(1n, 30);
+  return (
+    marketInfo.maxOpenInterestLong <= expandDecimals(1n, 30) &&
+    marketInfo.maxOpenInterestShort <= expandDecimals(1n, 30)
+  );
 }
 
 export function getMarket24Stats(dayPriceCandle: DayPriceCandle) {
