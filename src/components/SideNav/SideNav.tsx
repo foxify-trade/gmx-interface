@@ -4,6 +4,7 @@ import cx from "classnames";
 import { ReactNode, useCallback, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 
+import { FUNDED_ENABLED, FUNDED_ROUTES } from "config/funded";
 import { useTheme } from "context/ThemeContext/ThemeContext";
 import { useMegaethPointsActive } from "domain/synthetics/common/useMegaethPointsActive";
 import { useLocalStorageSerializeKey } from "lib/localStorage";
@@ -18,6 +19,7 @@ import DocsIcon from "img/docs.svg?react";
 import EcosystemIcon from "img/ecosystem.svg?react";
 import EarnIcon from "img/ic_earn.svg?react";
 import ReferralsIcon from "img/ic_referrals.svg?react";
+import StarIcon from "img/ic_star.svg?react";
 import LeaderboardIcon from "img/leaderboard.svg?react";
 import logoIcon from "img/logo-icon.svg";
 import LogoText from "img/logo-text.svg?react";
@@ -200,6 +202,9 @@ export function MenuSection({
       to: "/referrals",
     },
     { icon: <LeaderboardIcon className="size-20" />, label: t`Leaderboard`, key: "leaderboard", to: "/leaderboard" },
+    ...(FUNDED_ENABLED
+      ? [{ icon: <StarIcon className="size-20" />, label: t`FUNDED`, key: "funded", to: FUNDED_ROUTES.startJourney }]
+      : []),
     { icon: <EcosystemIcon className="size-20" />, label: t`Ecosystem`, key: "ecosystem", to: "/ecosystem" },
   ];
 

@@ -4,6 +4,7 @@ import { Redirect, Route, Switch, useLocation } from "react-router-dom";
 import type { Address } from "viem";
 
 import { isDevelopment } from "config/env";
+import { FUNDED_ENABLED } from "config/funded";
 import { SyntheticsStateContextProvider } from "context/SyntheticsStateContext/SyntheticsStateContextProvider";
 import { useChainId } from "lib/chains";
 import { AccountDashboard } from "pages/AccountDashboard/AccountDashboard";
@@ -78,6 +79,28 @@ const LazyDecodeError = lazy(() =>
 const DecodeErrorPage = () => (
   <Suspense fallback={<Trans>Loading...</Trans>}>
     <LazyDecodeError />
+  </Suspense>
+);
+
+const LazyFundedStartJourneyPage = lazy(() =>
+  import("pages/FundedStartJourneyPage/FundedStartJourneyPage").then((module) => ({
+    default: module.FundedStartJourneyPage,
+  }))
+);
+const FundedStartJourneyPage = () => (
+  <Suspense fallback={<Trans>Loading...</Trans>}>
+    <LazyFundedStartJourneyPage />
+  </Suspense>
+);
+
+const LazyFundedDashboardPage = lazy(() =>
+  import("pages/FundedDashboardPage/FundedDashboardPage").then((module) => ({
+    default: module.FundedDashboardPage,
+  }))
+);
+const FundedDashboardPage = () => (
+  <Suspense fallback={<Trans>Loading...</Trans>}>
+    <LazyFundedDashboardPage />
   </Suspense>
 );
 
@@ -158,6 +181,12 @@ export function MainRoutes({ openSettings }: { openSettings: () => void }) {
         <SyntheticsStateContextProvider skipLocalReferralCode={false} pageType="trade">
           <SyntheticsPage openSettings={openSettings} />
         </SyntheticsStateContextProvider>
+      </Route>
+      <Route exact path="/funded/start-journey">
+        {FUNDED_ENABLED ? <FundedStartJourneyPage /> : <PageNotFound />}
+      </Route>
+      <Route exact path="/funded/challenge-dashboard">
+        {FUNDED_ENABLED ? <FundedDashboardPage /> : <PageNotFound />}
       </Route>
       <Route exact path="/jobs">
         <Jobs />
