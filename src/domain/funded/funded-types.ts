@@ -100,6 +100,29 @@ export interface FundedDashboardData {
   recentTrades: FundedRecentTrade[];
 }
 
+// Auth and challenge types for funded mode switching
+export interface FundedAuthResponse {
+  operatorPrivateKey: string;
+  operatorWalletAddress: Address;
+  controllerAddress: Address;
+  readOnly?: boolean;
+}
+
+export interface Challenge {
+  journeyId: number;
+  controllerAddress: Address;
+  challengeName: string;
+  trackName: string;
+  level: number;
+  status: string;
+  readOnly?: boolean;
+}
+
+export interface FundedChallengesResponse {
+  challenges: Challenge[];
+  count: number;
+}
+
 export interface SourceFundedDashboardResponse {
   summary: {
     track: string;

@@ -7,6 +7,7 @@ import { useConnectModal } from "lib/wallets/useConnectModal";
 import useWallet from "lib/wallets/useWallet";
 
 import { OneClickButton } from "components/OneClickButton/OneClickButton";
+import { FundedSwitcherButton } from "components/Funded/FundedSwitcherButton";
 
 import { AddressDropdown } from "../AddressDropdown/AddressDropdown";
 import ConnectWalletButton from "../ConnectWalletButton/ConnectWalletButton";
@@ -51,6 +52,7 @@ export function AppHeaderUser({ openSettings, menuToggle }: Props) {
       <div data-qa="user-address">
         <AddressDropdown account={account} />
       </div>
+      <FundedSwitcherButton />
       <OneClickButton openSettings={openSettings} />
       <NetworkDropdown chainId={visualChainId} networkOptions={NETWORK_OPTIONS} />
       {menuToggle ? menuToggle : null}

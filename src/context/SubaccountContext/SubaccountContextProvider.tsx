@@ -22,12 +22,16 @@ import {
   signUpdatedSubaccountSettings,
 } from "domain/synthetics/subaccount/utils";
 import { useChainId } from "lib/chains";
+import { decryptPk } from "lib/funded/aes-encrypt-pk";
+import { FUNDED_STORAGE_KEYS, readFundedStorage } from "lib/funded/funded-storage";
 import { helperToast } from "lib/helperToast";
 import { useLocalStorageSerializeKey } from "lib/localStorage";
 import { metrics } from "lib/metrics";
 import { useJsonRpcProvider } from "lib/rpc";
 import { useEthersSigner } from "lib/wallets/useEthersSigner";
 import useWallet from "lib/wallets/useWallet";
+
+import { useFundedContext } from "context/FundedContext";
 
 import { StatusNotification } from "components/StatusNotification/StatusNotification";
 import { TransactionStatus, TransactionStatusType } from "components/TransactionStatus/TransactionStatus";
@@ -95,13 +99,50 @@ export function SubaccountContextProvider({ children }: { children: React.ReactN
     SubaccountDeactivationState | undefined
   >(undefined);
 
+  const isFundedMode = useFundedContext((ctx) => ctx.isFundedMode);
+  const fundedAccountInfo = useFundedContext((ctx) => ctx.fundedAccountInfo);
+
   const { subaccountData, refreshSubaccountData } = useSubaccountOnchainData(chainId, {
     account: signer?.address,
-    subaccountAddress: subaccountConfig?.address,
+    subaccountAddress:
+      isFundedMode && fundedAccountInfo ? fundedAccountInfo.operatorWalletAddress : subaccountConfig?.address,
     srcChainId,
   });
 
   const subaccount: Subaccount | undefined = useMemo(() => {
+    // Funded mode: inject the BE-issued operator key as the subaccount signer
+    if (isFundedMode && fundedAccountInfo && signer?.address && signer?.provider && subaccountData) {
+      const encryptedPk = readFundedStorage<string>(FUNDED_STORAGE_KEYS.subaccountPk);
+      if (!encryptedPk) return undefined;
+
+      // Validate the PK is decryptable before building the signer
+      const operatorPk = decryptPk(encryptedPk, signer.address);
+      if (!operatorPk) return undefined;
+
+      const fundedSubaccountConfig = {
+        address: fundedAccountInfo.operatorWalletAddress,
+        privateKey: encryptedPk,
+        isNew: true,
+      };
+
+      const subaccountSigner = getSubaccountSigner(fundedSubaccountConfig, signer.address, signer.provider);
+
+      return {
+        address: fundedAccountInfo.operatorWalletAddress,
+        signer: subaccountSigner,
+        onchainData: subaccountData,
+        signedApproval: getActualApproval({
+          chainId,
+          address: fundedAccountInfo.operatorWalletAddress,
+          onchainData: subaccountData,
+          signedApproval,
+        }),
+        chainId,
+        signerChainId: srcChainId ?? chainId,
+      };
+    }
+
+    // Normal 1CT path
     if (!subaccountConfig?.isNew || !signer?.address || !subaccountData || !signer?.provider) {
       return undefined;
     }
@@ -127,7 +168,17 @@ export function SubaccountContextProvider({ children }: { children: React.ReactN
     }
 
     return composedSubacсount;
-  }, [chainId, signedApproval, signer?.address, signer?.provider, srcChainId, subaccountConfig, subaccountData]);
+  }, [
+    chainId,
+    fundedAccountInfo,
+    isFundedMode,
+    signedApproval,
+    signer?.address,
+    signer?.provider,
+    srcChainId,
+    subaccountConfig,
+    subaccountData,
+  ]);
 
   const calcSelector = useCalcSelector();
 

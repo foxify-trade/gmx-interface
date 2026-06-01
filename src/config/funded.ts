@@ -32,3 +32,9 @@ export const FUNDED_ROUTES = {
 export const FUNDED_PREVIEW_NOTE = FUNDED_API_URL
   ? "Preview routes are enabled. Dashboard data will use the configured FUNDED API when a controller address is available."
   : "Preview routes are enabled. Dashboard data is currently served from typed demo adapters until a FUNDED API URL is configured.";
+
+export const FUNDED_BROKER_ID = "gmx-funded";
+export const FUNDED_ENDPOINTS = {
+  authenticate: "/funded/authenticate",
+  challenges: "/funded/challenges",
+} as const;

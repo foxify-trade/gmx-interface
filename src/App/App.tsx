@@ -21,6 +21,7 @@ import { GmxSdkProvider } from "context/GmxSdkContext/GmxSdkContext";
 import { PendingTxnsContextProvider } from "context/PendingTxnsContext/PendingTxnsContext";
 import { SettingsContextProvider } from "context/SettingsContext/SettingsContextProvider";
 import { SorterContextProvider } from "context/SorterContext/SorterContextProvider";
+import { FundedContextProvider } from "context/FundedContext";
 import { SubaccountContextProvider } from "context/SubaccountContext/SubaccountContextProvider";
 import { SyntheticsEventsProvider } from "context/SyntheticsEvents";
 import { TokenPermitsContextProvider } from "context/TokenPermitsContext/TokenPermitsContextProvider";
@@ -67,6 +68,7 @@ function App() {
   app = <TokensFavoritesContextProvider>{app}</TokensFavoritesContextProvider>;
   app = <SyntheticsEventsProvider>{app}</SyntheticsEventsProvider>;
   app = <SubaccountContextProvider>{app}</SubaccountContextProvider>;
+  app = <FundedContextProvider>{app}</FundedContextProvider>;
   app = <TokenPermitsContextProvider>{app}</TokenPermitsContextProvider>;
   app = <TokensBalancesContextProvider>{app}</TokensBalancesContextProvider>;
   app = <SEO>{app}</SEO>;
