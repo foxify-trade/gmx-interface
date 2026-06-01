@@ -4,7 +4,7 @@ import cx from "classnames";
 import { ReactNode, useCallback, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 
-import { FUNDED_ENABLED, FUNDED_ROUTES } from "config/funded";
+import { FUNDED_ENABLED } from "config/funded";
 import { useTheme } from "context/ThemeContext/ThemeContext";
 import { useMegaethPointsActive } from "domain/synthetics/common/useMegaethPointsActive";
 import { useLocalStorageSerializeKey } from "lib/localStorage";
@@ -19,7 +19,6 @@ import DocsIcon from "img/docs.svg?react";
 import EcosystemIcon from "img/ecosystem.svg?react";
 import EarnIcon from "img/ic_earn.svg?react";
 import ReferralsIcon from "img/ic_referrals.svg?react";
-import StarIcon from "img/ic_star.svg?react";
 import LeaderboardIcon from "img/leaderboard.svg?react";
 import logoIcon from "img/logo-icon.svg";
 import LogoText from "img/logo-text.svg?react";
@@ -27,6 +26,7 @@ import sparkleIcon from "img/sparkle.svg";
 import TradeIcon from "img/trade.svg?react";
 
 import { BottomMenuSection } from "./BottomMenuSection";
+import { FundedExpandableNavItem } from "./FundedExpandableNavItem";
 
 function SideNav({ className }: { className?: string }) {
   const [isCollapsed, setIsCollapsed] = useLocalStorageSerializeKey("is-side-nav-collapsed", false);
@@ -180,7 +180,7 @@ export function MenuSection({
       label
     );
 
-  const mainNavItems = [
+  const preNavItems = [
     {
       icon: <TradeIcon className="size-20" />,
       label: withMegaethSparkle(t`Trade`),
@@ -202,9 +202,9 @@ export function MenuSection({
       to: "/referrals",
     },
     { icon: <LeaderboardIcon className="size-20" />, label: t`Leaderboard`, key: "leaderboard", to: "/leaderboard" },
-    ...(FUNDED_ENABLED
-      ? [{ icon: <StarIcon className="size-20" />, label: t`FUNDED`, key: "funded", to: FUNDED_ROUTES.startJourney }]
-      : []),
+  ];
+
+  const postNavItems = [
     { icon: <EcosystemIcon className="size-20" />, label: t`Ecosystem`, key: "ecosystem", to: "/ecosystem" },
   ];
 
@@ -212,7 +212,19 @@ export function MenuSection({
 
   return (
     <ul className="flex list-none flex-col px-0">
-      {mainNavItems.map((item) => (
+      {preNavItems.map((item) => (
+        <NavItem
+          key={item.key}
+          icon={item.icon}
+          label={item.label}
+          isActive={pathname === item.to || pathname.startsWith(`${item.to}/`)}
+          isCollapsed={isCollapsed}
+          to={item.to}
+          onClick={onMenuItemClick}
+        />
+      ))}
+      {FUNDED_ENABLED && <FundedExpandableNavItem isCollapsed={isCollapsed} onMenuItemClick={onMenuItemClick} />}
+      {postNavItems.map((item) => (
         <NavItem
           key={item.key}
           icon={item.icon}

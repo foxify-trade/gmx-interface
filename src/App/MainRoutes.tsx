@@ -104,6 +104,17 @@ const FundedDashboardPage = () => (
   </Suspense>
 );
 
+const LazyFundedMyJourneysPage = lazy(() =>
+  import("pages/FundedMyJourneysPage/FundedMyJourneysPage").then((module) => ({
+    default: module.FundedMyJourneysPage,
+  }))
+);
+const FundedMyJourneysPage = () => (
+  <Suspense fallback={<Trans>Loading...</Trans>}>
+    <LazyFundedMyJourneysPage />
+  </Suspense>
+);
+
 export function MainRoutes({ openSettings }: { openSettings: () => void }) {
   const { chainId } = useChainId();
 
@@ -184,6 +195,9 @@ export function MainRoutes({ openSettings }: { openSettings: () => void }) {
       </Route>
       <Route exact path="/funded/start-journey">
         {FUNDED_ENABLED ? <FundedStartJourneyPage /> : <PageNotFound />}
+      </Route>
+      <Route exact path="/funded/my-journeys">
+        {FUNDED_ENABLED ? <FundedMyJourneysPage /> : <PageNotFound />}
       </Route>
       <Route exact path="/funded/challenge-dashboard">
         {FUNDED_ENABLED ? <FundedDashboardPage /> : <PageNotFound />}

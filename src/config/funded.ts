@@ -26,6 +26,7 @@ export const FUNDED_PRODUCT_NAME = "GMX FUNDED";
 export const FUNDED_DEMO_CONTROLLER_ADDRESS = "0x1111111111111111111111111111111111111111" as const;
 export const FUNDED_ROUTES = {
   startJourney: "/funded/start-journey",
+  myJourneys: "/funded/my-journeys",
   challengeDashboard: "/funded/challenge-dashboard",
 } as const;
 

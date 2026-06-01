@@ -98,6 +98,79 @@ export interface FundedDashboardData {
   modifiers: FundedModifier[];
   nextSteps: string[];
   recentTrades: FundedRecentTrade[];
+  // v2 dashboard extensions
+  journeyMeta?: FundedJourneyMeta;
+  overviewExtras?: FundedOverviewExtras;
+  performanceStats?: FundedPerformanceStats;
+  levelUpData?: FundedLevelUpData;
+}
+
+export type FundedDashboardTab = "overview" | "performance" | "trade-history" | "level-up";
+
+export interface FundedJourneyMeta {
+  challengeName: string;
+  challengeType: string;
+  levelNum: number;
+  totalLevels: number;
+  startDateLabel: string;
+  daysIn: number;
+}
+
+export interface FundedOverviewExtras {
+  activityTimerStatus: string;
+  activityTimerHelper: string;
+  pointsTrend: string;
+  snapshotAmountUsd: number;
+  snapshotDateLabel: string;
+  tradingFrequencyPerDay: number;
+}
+
+export interface FundedPerformanceStats {
+  sharpeRatio: number;
+  sharpeLabel: string;
+  calmarRatio: number;
+  calmarLabel: string;
+  gainToPain: number;
+  gainToPainLabel: string;
+  consistency: number;
+  consistencyLabel: string;
+  combinedModifier: number;
+  sessions: number;
+  avgTradeSizeUsd: number;
+  winLossRatio: number;
+  commissionPaid: number;
+  activityPenalty: number;
+  fundsTxFee: number;
+  availableProfit: number;
+  availableCollateral: number;
+  assetDistribution: Array<{ symbol: string; pct: number }>;
+  peerPerformance: string;
+  peerPerformanceTone: "positive" | "negative" | "neutral";
+  peerVolume: string;
+  peerVolumeTone: "positive" | "negative" | "neutral";
+  peerDuration: string;
+  peerDurationTone: "positive" | "negative" | "neutral";
+  dailyPnlSeries: FundedDashboardPoint[];
+}
+
+export interface FundedLevelUpData {
+  challengeDurationDays: number;
+  availableProfitUsd: number;
+  availableCollateralUsd: number;
+  totalWithdrawnUsd: number;
+  levelEndedTitle?: string;
+  levelEndedSubtitle?: string;
+  nextLevel?: {
+    levelName: string;
+    advanceLabel: string;
+    description: string;
+    accountSizeUsd: number;
+    collateralUsd: number;
+    drawdownLimitPct: number;
+    requiredCollateralUsd: number;
+    availableFundsUsd: number;
+    netDepositRequired: number;
+  };
 }
 
 // Auth and challenge types for funded mode switching
@@ -141,12 +214,61 @@ export interface SourceFundedDashboardResponse {
     remainingTimeHours: number;
     dailyPnlData?: Array<{ date: string; pnl: number }>;
     dailyVolumeData?: Array<{ date: string; volume: number }>;
+    // v2 extensions
+    challengeName?: string;
+    challengeType?: string;
+    levelNum?: number;
+    totalLevels?: number;
+    startDate?: string;
+    activityTimerStatus?: string;
+    activityTimerHelper?: string;
+    pointsTrend?: string;
+    snapshotAmountUsd?: number;
+    snapshotDate?: string;
+    tradingFrequency?: number;
+    challengeDurationDays?: number;
+    levelEndedTitle?: string;
+    levelEndedSubtitle?: string;
+    availableProfit?: number;
+    availableCollateral?: number;
+    totalWithdrawn?: number;
   };
   performanceModifiers?: {
     sharpeBonus: number;
     calmarBonus: number;
     consistencyModifier: number;
     combinedMultiplier: number;
+    // v2 extensions
+    sharpeLabel?: string;
+    calmarLabel?: string;
+    gainToPain?: number;
+    gainToPainLabel?: string;
+    consistencyLabel?: string;
+    sessions?: number;
+    winLossRatio?: number;
+    avgTradeSize?: number;
+    commissionPaid?: number;
+    activityPenalty?: number;
+    fundsTxFee?: number;
+    assetDistribution?: Array<{ symbol: string; pct: number }>;
+    peerPerformance?: string;
+    peerPerformanceTone?: string;
+    peerVolume?: string;
+    peerVolumeTone?: string;
+    peerDuration?: string;
+    peerDurationTone?: string;
+    dailyPnlData?: Array<{ date: string; pnl: number }>;
+  };
+  nextLevel?: {
+    levelName: string;
+    advanceLabel: string;
+    description: string;
+    accountSize: number;
+    collateral: number;
+    drawdownLimit: number;
+    requiredCollateral: number;
+    availableFunds: number;
+    netDepositRequired: number;
   };
   tradingActivity?: {
     recentTrades?: Array<{

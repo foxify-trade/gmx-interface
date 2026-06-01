@@ -92,6 +92,81 @@ export function normalizeFundedDashboardResponse(
       pnlUsd: trade.pnl,
       points: trade.pointsImpact,
     })),
+    // v2 extensions
+    journeyMeta: response.summary.challengeName
+      ? {
+          challengeName: response.summary.challengeName,
+          challengeType: response.summary.challengeType ?? "CHALLENGE",
+          levelNum: response.summary.levelNum ?? 1,
+          totalLevels: response.summary.totalLevels ?? 1,
+          startDateLabel: response.summary.startDate ? formatFundedDateLabel(response.summary.startDate) : "Unknown",
+          daysIn: 0,
+        }
+      : undefined,
+    overviewExtras: {
+      activityTimerStatus: response.summary.activityTimerStatus ?? "Active",
+      activityTimerHelper: response.summary.activityTimerHelper ?? "",
+      pointsTrend: response.summary.pointsTrend ?? "Stable",
+      snapshotAmountUsd: response.summary.snapshotAmountUsd ?? 0,
+      snapshotDateLabel: response.summary.snapshotDate ? formatFundedDateLabel(response.summary.snapshotDate) : "",
+      tradingFrequencyPerDay: response.summary.tradingFrequency ?? 0,
+    },
+    performanceStats: response.performanceModifiers
+      ? {
+          sharpeRatio: response.performanceModifiers.sharpeBonus,
+          sharpeLabel: response.performanceModifiers.sharpeLabel ?? "Below average",
+          calmarRatio: response.performanceModifiers.calmarBonus,
+          calmarLabel: response.performanceModifiers.calmarLabel ?? "Below average",
+          gainToPain: response.performanceModifiers.gainToPain ?? 0,
+          gainToPainLabel: response.performanceModifiers.gainToPainLabel ?? "Steady",
+          consistency: response.performanceModifiers.consistencyModifier,
+          consistencyLabel: response.performanceModifiers.consistencyLabel ?? "Variable",
+          combinedModifier: response.performanceModifiers.combinedMultiplier,
+          sessions: response.performanceModifiers.sessions ?? 0,
+          avgTradeSizeUsd: response.performanceModifiers.avgTradeSize ?? 0,
+          winLossRatio: response.performanceModifiers.winLossRatio ?? 0,
+          commissionPaid: response.performanceModifiers.commissionPaid ?? 0,
+          activityPenalty: response.performanceModifiers.activityPenalty ?? 0,
+          fundsTxFee: response.performanceModifiers.fundsTxFee ?? 0,
+          availableProfit: response.summary.availableProfit ?? 0,
+          availableCollateral: response.summary.availableCollateral ?? 0,
+          assetDistribution: response.performanceModifiers.assetDistribution ?? [],
+          peerPerformance: response.performanceModifiers.peerPerformance ?? "Average",
+          peerPerformanceTone:
+            (response.performanceModifiers.peerPerformanceTone as "positive" | "negative" | "neutral") ?? "neutral",
+          peerVolume: response.performanceModifiers.peerVolume ?? "Average",
+          peerVolumeTone:
+            (response.performanceModifiers.peerVolumeTone as "positive" | "negative" | "neutral") ?? "neutral",
+          peerDuration: response.performanceModifiers.peerDuration ?? "Average",
+          peerDurationTone:
+            (response.performanceModifiers.peerDurationTone as "positive" | "negative" | "neutral") ?? "neutral",
+          dailyPnlSeries: (response.performanceModifiers.dailyPnlData ?? []).map((p) => ({
+            label: p.date,
+            value: p.pnl,
+          })),
+        }
+      : undefined,
+    levelUpData: {
+      challengeDurationDays: response.summary.challengeDurationDays ?? 0,
+      availableProfitUsd: response.summary.availableProfit ?? 0,
+      availableCollateralUsd: response.summary.availableCollateral ?? 0,
+      totalWithdrawnUsd: response.summary.totalWithdrawn ?? 0,
+      levelEndedTitle: response.summary.levelEndedTitle,
+      levelEndedSubtitle: response.summary.levelEndedSubtitle,
+      nextLevel: response.nextLevel
+        ? {
+            levelName: response.nextLevel.levelName,
+            advanceLabel: response.nextLevel.advanceLabel,
+            description: response.nextLevel.description,
+            accountSizeUsd: response.nextLevel.accountSize,
+            collateralUsd: response.nextLevel.collateral,
+            drawdownLimitPct: response.nextLevel.drawdownLimit,
+            requiredCollateralUsd: response.nextLevel.requiredCollateral,
+            availableFundsUsd: response.nextLevel.availableFunds,
+            netDepositRequired: response.nextLevel.netDepositRequired,
+          }
+        : undefined,
+    },
   };
 }
 

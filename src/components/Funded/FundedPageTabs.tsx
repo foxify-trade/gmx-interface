@@ -5,7 +5,8 @@ import { FUNDED_ROUTES } from "config/funded";
 
 const tabs = [
   { to: FUNDED_ROUTES.startJourney, label: "Start Journey" },
-  { to: FUNDED_ROUTES.challengeDashboard, label: "Challenge Dashboard" },
+  { to: FUNDED_ROUTES.myJourneys, label: "My Journeys" },
+  { to: FUNDED_ROUTES.challengeDashboard, label: "Journey Dashboard" },
 ];
 
 export function FundedPageTabs({ activePath }: { activePath: string }) {
