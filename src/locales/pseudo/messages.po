@@ -349,6 +349,10 @@ msgstr ""
 msgid "Cancel Limit Swap"
 msgstr ""
 
+#: src/components/Funded/JourneySelectorModal.tsx
+msgid "Level {0}"
+msgstr ""
+
 #: src/pages/Ecosystem/ecosystemConstants.tsx
 msgid "Yield farming"
 msgstr ""
@@ -1674,6 +1678,10 @@ msgstr ""
 msgid "Vest"
 msgstr ""
 
+#: src/components/Funded/FundedSwitcherButton.tsx
+msgid "Read-only"
+msgstr ""
+
 #: src/domain/synthetics/sidecarOrders/utils.ts
 msgid "Set TP price below limit price"
 msgstr ""
@@ -2382,6 +2390,10 @@ msgstr ""
 msgid "Max deposit limit reached"
 msgstr ""
 
+#: src/components/SideNav/FundedExpandableNavItem.tsx
+msgid "Journey Dashboard"
+msgstr ""
+
 #: src/pages/Dashboard/GmxCard.tsx
 msgid "Total staked"
 msgstr ""
@@ -2589,6 +2601,11 @@ msgstr ""
 #: src/pages/LeaderboardPage/components/LeaderboardAccountsTable.tsx
 #: src/pages/LeaderboardPage/components/LeaderboardPositionsTable.tsx
 msgid "RANK"
+msgstr ""
+
+#: src/components/Funded/FundedSwitcherButton.tsx
+#: src/components/Funded/JourneySelectorModal.tsx
+msgid "No funded journeys available"
 msgstr ""
 
 #: src/components/StatusNotification/OrderStatusNotification.tsx
@@ -3742,6 +3759,10 @@ msgstr ""
 msgid "Cumulative"
 msgstr ""
 
+#: src/components/Funded/JourneySelectorModal.tsx
+msgid "Connecting..."
+msgstr ""
+
 #: src/pages/AccountTransfer/CompleteAccountTransfer/CompleteAccountTransfer.tsx
 msgid "Incorrect account"
 msgstr ""
@@ -4156,6 +4177,10 @@ msgstr ""
 
 #: src/components/Referrals/traders/faq.tsx
 msgid "Referral discounts apply to opening and closing fees for leverage trading. Swap fees are not included."
+msgstr ""
+
+#: src/components/Funded/FundedSwitcherButton.tsx
+msgid "Funded Mode"
 msgstr ""
 
 #: src/components/PositionShare/PositionShare.tsx
@@ -5239,6 +5264,10 @@ msgstr ""
 msgid "Max lendable impact factor for withdrawals"
 msgstr ""
 
+#: src/components/SideNav/FundedExpandableNavItem.tsx
+msgid "My Journeys"
+msgstr ""
+
 #: src/components/Earn/Portfolio/AssetsList/GmxAssetCard/ClaimModal.tsx
 msgid "Claim completed"
 msgstr ""
@@ -5749,6 +5778,10 @@ msgstr ""
 #: src/pages/Dashboard/OverviewCard.tsx
 #: src/pages/Dashboard/OverviewCard.tsx
 msgid "Botanix"
+msgstr ""
+
+#: src/components/SideNav/FundedExpandableNavItem.tsx
+msgid "Start Journey"
 msgstr ""
 
 #: src/components/GmSwap/GmFees/GmFees.tsx
@@ -6396,6 +6429,9 @@ msgstr ""
 #: src/App/MainRoutes.tsx
 #: src/App/MainRoutes.tsx
 #: src/App/MainRoutes.tsx
+#: src/App/MainRoutes.tsx
+#: src/App/MainRoutes.tsx
+#: src/App/MainRoutes.tsx
 #: src/components/BridgeModal/BridgeOutModal.tsx
 #: src/components/ClaimModal/ClaimModal.tsx
 #: src/components/Claims/Claims.tsx
@@ -6522,6 +6558,11 @@ msgstr ""
 
 #: src/pages/Dashboard/DashboardV2.tsx
 msgid "Analytics"
+msgstr ""
+
+#: src/components/Funded/FundedSwitcherButton.tsx
+#: src/components/Funded/JourneySelectorModal.tsx
+msgid "Loading journeys..."
 msgstr ""
 
 #: src/components/AprInfo/AprInfo.tsx
@@ -7541,6 +7582,10 @@ msgstr ""
 msgid "Proof of reserves"
 msgstr ""
 
+#: src/components/Funded/FundedSwitcherButton.tsx
+msgid "Exit Funded"
+msgstr ""
+
 #: src/components/Referrals/affiliates/faq.tsx
 msgid "When will I start earning?"
 msgstr ""
@@ -8089,6 +8134,10 @@ msgstr ""
 msgid "You must be on this page to accept the transfer. <0>Copy link</0>."
 msgstr ""
 
+#: src/components/Funded/JourneySelectorModal.tsx
+msgid "Connect"
+msgstr ""
+
 #: src/lib/tenderly.tsx
 #: src/lib/tenderly.tsx
 msgid "for {comment}"
@@ -8211,6 +8260,10 @@ msgstr ""
 
 #: src/components/Errors/getContractErrorMessage.ts
 msgid "Price impact exceeds order size. Impact: {priceImpactUsdText}, order: {sizeDeltaUsdText}"
+msgstr ""
+
+#: src/components/Funded/JourneySelectorModal.tsx
+msgid "Failed to load journeys"
 msgstr ""
 
 #: src/pages/Ecosystem/ecosystemConstants.tsx
@@ -9199,6 +9252,11 @@ msgstr ""
 msgid "Express + One-Click"
 msgstr ""
 
+#: src/components/SideNav/FundedExpandableNavItem.tsx
+#: src/components/SideNav/FundedExpandableNavItem.tsx
+msgid "FUNDED"
+msgstr ""
+
 #: src/components/Earn/Discovery/EarnProductCard.tsx
 msgid "GM tokens represent shares in a liquidity pool for a single GMX market. Buy GM to provide liquidity and earn fees from leverage trading, swaps, and market-making activity on that specific market. All rewards are auto-compounded."
 msgstr ""
@@ -10106,6 +10164,10 @@ msgstr ""
 msgid "Invalid liquidation price"
 msgstr ""
 
+#: src/components/Funded/JourneySelectorModal.tsx
+msgid "Select Funded Journey"
+msgstr ""
+
 #: src/components/GmxAccountModal/MainView.tsx
 msgid "Available to trade"
 msgstr ""
@@ -10902,6 +10964,10 @@ msgstr ""
 
 #: src/domain/multichain/progress/MultichainTransferProgressView.tsx
 msgid "Buy {gmOrGlvLabel} failed"
+msgstr ""
+
+#: src/components/Funded/FundedSwitcherButton.tsx
+msgid "Select Journey"
 msgstr ""
 
 #: src/components/Errors/ErrorBoundary.tsx

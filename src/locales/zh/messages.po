@@ -349,6 +349,10 @@ msgstr "Telegram 机器人"
 msgid "Cancel Limit Swap"
 msgstr "取消限价交换"
 
+#: src/components/Funded/JourneySelectorModal.tsx
+msgid "Level {0}"
+msgstr ""
+
 #: src/pages/Ecosystem/ecosystemConstants.tsx
 msgid "Yield farming"
 msgstr "收益挖矿"
@@ -1674,6 +1678,10 @@ msgstr "显示更少"
 msgid "Vest"
 msgstr "归属"
 
+#: src/components/Funded/FundedSwitcherButton.tsx
+msgid "Read-only"
+msgstr ""
+
 #: src/domain/synthetics/sidecarOrders/utils.ts
 msgid "Set TP price below limit price"
 msgstr ""
@@ -2382,6 +2390,10 @@ msgstr "做空储备因子"
 msgid "Max deposit limit reached"
 msgstr "已达到最大存入限额"
 
+#: src/components/SideNav/FundedExpandableNavItem.tsx
+msgid "Journey Dashboard"
+msgstr ""
+
 #: src/pages/Dashboard/GmxCard.tsx
 msgid "Total staked"
 msgstr "总质押量"
@@ -2590,6 +2602,11 @@ msgstr "生成可分享图像中..."
 #: src/pages/LeaderboardPage/components/LeaderboardPositionsTable.tsx
 msgid "RANK"
 msgstr "RANK"
+
+#: src/components/Funded/FundedSwitcherButton.tsx
+#: src/components/Funded/JourneySelectorModal.tsx
+msgid "No funded journeys available"
+msgstr ""
 
 #: src/components/StatusNotification/OrderStatusNotification.tsx
 msgid "{txnTypeText} {0} order for"
@@ -3742,6 +3759,10 @@ msgstr "{0}"
 msgid "Cumulative"
 msgstr ""
 
+#: src/components/Funded/JourneySelectorModal.tsx
+msgid "Connecting..."
+msgstr ""
+
 #: src/pages/AccountTransfer/CompleteAccountTransfer/CompleteAccountTransfer.tsx
 msgid "Incorrect account"
 msgstr "账户不正确"
@@ -4156,6 +4177,10 @@ msgstr "来源链仅支持单一代币"
 
 #: src/components/Referrals/traders/faq.tsx
 msgid "Referral discounts apply to opening and closing fees for leverage trading. Swap fees are not included."
+msgstr ""
+
+#: src/components/Funded/FundedSwitcherButton.tsx
+msgid "Funded Mode"
 msgstr ""
 
 #: src/components/PositionShare/PositionShare.tsx
@@ -5239,6 +5264,10 @@ msgstr "链接"
 msgid "Max lendable impact factor for withdrawals"
 msgstr "提取最大可借出影响因子"
 
+#: src/components/SideNav/FundedExpandableNavItem.tsx
+msgid "My Journeys"
+msgstr ""
+
 #: src/components/Earn/Portfolio/AssetsList/GmxAssetCard/ClaimModal.tsx
 msgid "Claim completed"
 msgstr "领取完成"
@@ -5750,6 +5779,10 @@ msgstr "订单因协议验证错误而失败：{errorName}"
 #: src/pages/Dashboard/OverviewCard.tsx
 msgid "Botanix"
 msgstr "Botanix"
+
+#: src/components/SideNav/FundedExpandableNavItem.tsx
+msgid "Start Journey"
+msgstr ""
 
 #: src/components/GmSwap/GmFees/GmFees.tsx
 #: src/components/TradeBox/TradeBoxRows/PriceImpactFeesRow.tsx
@@ -6396,6 +6429,9 @@ msgstr ""
 #: src/App/MainRoutes.tsx
 #: src/App/MainRoutes.tsx
 #: src/App/MainRoutes.tsx
+#: src/App/MainRoutes.tsx
+#: src/App/MainRoutes.tsx
+#: src/App/MainRoutes.tsx
 #: src/components/BridgeModal/BridgeOutModal.tsx
 #: src/components/ClaimModal/ClaimModal.tsx
 #: src/components/Claims/Claims.tsx
@@ -6523,6 +6559,11 @@ msgstr "收益优化金库，跨多个 GMX 市场提供流动性"
 #: src/pages/Dashboard/DashboardV2.tsx
 msgid "Analytics"
 msgstr "数据分析"
+
+#: src/components/Funded/FundedSwitcherButton.tsx
+#: src/components/Funded/JourneySelectorModal.tsx
+msgid "Loading journeys..."
+msgstr ""
 
 #: src/components/AprInfo/AprInfo.tsx
 msgid "wstETH APR"
@@ -7541,6 +7582,10 @@ msgstr "需要使用至少 {0} 的资金才能参与排名"
 msgid "Proof of reserves"
 msgstr "储备证明"
 
+#: src/components/Funded/FundedSwitcherButton.tsx
+msgid "Exit Funded"
+msgstr ""
+
 #: src/components/Referrals/affiliates/faq.tsx
 msgid "When will I start earning?"
 msgstr ""
@@ -8089,6 +8134,10 @@ msgstr "输入金额"
 msgid "You must be on this page to accept the transfer. <0>Copy link</0>."
 msgstr ""
 
+#: src/components/Funded/JourneySelectorModal.tsx
+msgid "Connect"
+msgstr ""
+
 #: src/lib/tenderly.tsx
 #: src/lib/tenderly.tsx
 msgid "for {comment}"
@@ -8212,6 +8261,10 @@ msgstr "{0} GMX"
 #: src/components/Errors/getContractErrorMessage.ts
 msgid "Price impact exceeds order size. Impact: {priceImpactUsdText}, order: {sizeDeltaUsdText}"
 msgstr "价格影响超过订单规模。影响：{priceImpactUsdText}，订单：{sizeDeltaUsdText}"
+
+#: src/components/Funded/JourneySelectorModal.tsx
+msgid "Failed to load journeys"
+msgstr ""
 
 #: src/pages/Ecosystem/ecosystemConstants.tsx
 msgid "Jones DAO"
@@ -9199,6 +9252,11 @@ msgstr "/USD"
 msgid "Express + One-Click"
 msgstr "快速 + 一键"
 
+#: src/components/SideNav/FundedExpandableNavItem.tsx
+#: src/components/SideNav/FundedExpandableNavItem.tsx
+msgid "FUNDED"
+msgstr ""
+
 #: src/components/Earn/Discovery/EarnProductCard.tsx
 msgid "GM tokens represent shares in a liquidity pool for a single GMX market. Buy GM to provide liquidity and earn fees from leverage trading, swaps, and market-making activity on that specific market. All rewards are auto-compounded."
 msgstr "GM 代币代表单个 GMX 市场流动性池中的份额。购买 GM 以提供流动性，并从该特定市场的杠杆交易、兑换和做市活动中赚取费用。所有奖励均自动复利。"
@@ -10106,6 +10164,10 @@ msgstr "代币许可测试"
 msgid "Invalid liquidation price"
 msgstr "无效的清算价格"
 
+#: src/components/Funded/JourneySelectorModal.tsx
+msgid "Select Funded Journey"
+msgstr ""
+
 #: src/components/GmxAccountModal/MainView.tsx
 msgid "Available to trade"
 msgstr "可用于交易"
@@ -10903,6 +10965,10 @@ msgstr "执行 TWAP 兑换部分"
 #: src/domain/multichain/progress/MultichainTransferProgressView.tsx
 msgid "Buy {gmOrGlvLabel} failed"
 msgstr "购买 {gmOrGlvLabel} 失败"
+
+#: src/components/Funded/FundedSwitcherButton.tsx
+msgid "Select Journey"
+msgstr ""
 
 #: src/components/Errors/ErrorBoundary.tsx
 msgid "Reload the page or report the issue if the <0/> problem persists"

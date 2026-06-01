@@ -349,6 +349,10 @@ msgstr "Telegram bot"
 msgid "Cancel Limit Swap"
 msgstr "Cancel Limit Swap"
 
+#: src/components/Funded/JourneySelectorModal.tsx
+msgid "Level {0}"
+msgstr "Level {0}"
+
 #: src/pages/Ecosystem/ecosystemConstants.tsx
 msgid "Yield farming"
 msgstr "Yield farming"
@@ -1674,6 +1678,10 @@ msgstr "Show less"
 msgid "Vest"
 msgstr "Vest"
 
+#: src/components/Funded/FundedSwitcherButton.tsx
+msgid "Read-only"
+msgstr "Read-only"
+
 #: src/domain/synthetics/sidecarOrders/utils.ts
 msgid "Set TP price below limit price"
 msgstr "Set TP price below limit price"
@@ -2382,6 +2390,10 @@ msgstr "Reserve factor shorts"
 msgid "Max deposit limit reached"
 msgstr "Max deposit limit reached"
 
+#: src/components/SideNav/FundedExpandableNavItem.tsx
+msgid "Journey Dashboard"
+msgstr "Journey Dashboard"
+
 #: src/pages/Dashboard/GmxCard.tsx
 msgid "Total staked"
 msgstr "Total staked"
@@ -2590,6 +2602,11 @@ msgstr "Generating shareable image..."
 #: src/pages/LeaderboardPage/components/LeaderboardPositionsTable.tsx
 msgid "RANK"
 msgstr "RANK"
+
+#: src/components/Funded/FundedSwitcherButton.tsx
+#: src/components/Funded/JourneySelectorModal.tsx
+msgid "No funded journeys available"
+msgstr "No funded journeys available"
 
 #: src/components/StatusNotification/OrderStatusNotification.tsx
 msgid "{txnTypeText} {0} order for"
@@ -3742,6 +3759,10 @@ msgstr "{0}"
 msgid "Cumulative"
 msgstr "Cumulative"
 
+#: src/components/Funded/JourneySelectorModal.tsx
+msgid "Connecting..."
+msgstr "Connecting..."
+
 #: src/pages/AccountTransfer/CompleteAccountTransfer/CompleteAccountTransfer.tsx
 msgid "Incorrect account"
 msgstr "Incorrect account"
@@ -4157,6 +4178,10 @@ msgstr "Source chain supports single token only"
 #: src/components/Referrals/traders/faq.tsx
 msgid "Referral discounts apply to opening and closing fees for leverage trading. Swap fees are not included."
 msgstr "Referral discounts apply to opening and closing fees for leverage trading. Swap fees are not included."
+
+#: src/components/Funded/FundedSwitcherButton.tsx
+msgid "Funded Mode"
+msgstr "Funded Mode"
 
 #: src/components/PositionShare/PositionShare.tsx
 msgid "Show rPnL after fees"
@@ -5239,6 +5264,10 @@ msgstr "Links"
 msgid "Max lendable impact factor for withdrawals"
 msgstr "Max lendable impact factor for withdrawals"
 
+#: src/components/SideNav/FundedExpandableNavItem.tsx
+msgid "My Journeys"
+msgstr "My Journeys"
+
 #: src/components/Earn/Portfolio/AssetsList/GmxAssetCard/ClaimModal.tsx
 msgid "Claim completed"
 msgstr "Claim completed"
@@ -5750,6 +5779,10 @@ msgstr "Order failed due to a protocol validation error: {errorName}"
 #: src/pages/Dashboard/OverviewCard.tsx
 msgid "Botanix"
 msgstr "Botanix"
+
+#: src/components/SideNav/FundedExpandableNavItem.tsx
+msgid "Start Journey"
+msgstr "Start Journey"
 
 #: src/components/GmSwap/GmFees/GmFees.tsx
 #: src/components/TradeBox/TradeBoxRows/PriceImpactFeesRow.tsx
@@ -6396,6 +6429,9 @@ msgstr "ParaSwap"
 #: src/App/MainRoutes.tsx
 #: src/App/MainRoutes.tsx
 #: src/App/MainRoutes.tsx
+#: src/App/MainRoutes.tsx
+#: src/App/MainRoutes.tsx
+#: src/App/MainRoutes.tsx
 #: src/components/BridgeModal/BridgeOutModal.tsx
 #: src/components/ClaimModal/ClaimModal.tsx
 #: src/components/Claims/Claims.tsx
@@ -6523,6 +6559,11 @@ msgstr "Yield-optimized vaults supplying liquidity across multiple GMX markets"
 #: src/pages/Dashboard/DashboardV2.tsx
 msgid "Analytics"
 msgstr "Analytics"
+
+#: src/components/Funded/FundedSwitcherButton.tsx
+#: src/components/Funded/JourneySelectorModal.tsx
+msgid "Loading journeys..."
+msgstr "Loading journeys..."
 
 #: src/components/AprInfo/AprInfo.tsx
 msgid "wstETH APR"
@@ -7541,6 +7582,10 @@ msgstr "Minimum capital used of {0} required to qualify for rankings"
 msgid "Proof of reserves"
 msgstr "Proof of reserves"
 
+#: src/components/Funded/FundedSwitcherButton.tsx
+msgid "Exit Funded"
+msgstr "Exit Funded"
+
 #: src/components/Referrals/affiliates/faq.tsx
 msgid "When will I start earning?"
 msgstr "When will I start earning?"
@@ -8089,6 +8134,10 @@ msgstr "Enter an amount"
 msgid "You must be on this page to accept the transfer. <0>Copy link</0>."
 msgstr "You must be on this page to accept the transfer. <0>Copy link</0>."
 
+#: src/components/Funded/JourneySelectorModal.tsx
+msgid "Connect"
+msgstr "Connect"
+
 #: src/lib/tenderly.tsx
 #: src/lib/tenderly.tsx
 msgid "for {comment}"
@@ -8212,6 +8261,10 @@ msgstr "{0} GMX"
 #: src/components/Errors/getContractErrorMessage.ts
 msgid "Price impact exceeds order size. Impact: {priceImpactUsdText}, order: {sizeDeltaUsdText}"
 msgstr "Price impact exceeds order size. Impact: {priceImpactUsdText}, order: {sizeDeltaUsdText}"
+
+#: src/components/Funded/JourneySelectorModal.tsx
+msgid "Failed to load journeys"
+msgstr "Failed to load journeys"
 
 #: src/pages/Ecosystem/ecosystemConstants.tsx
 msgid "Jones DAO"
@@ -9199,6 +9252,11 @@ msgstr "/USD"
 msgid "Express + One-Click"
 msgstr "Express + One-Click"
 
+#: src/components/SideNav/FundedExpandableNavItem.tsx
+#: src/components/SideNav/FundedExpandableNavItem.tsx
+msgid "FUNDED"
+msgstr "FUNDED"
+
 #: src/components/Earn/Discovery/EarnProductCard.tsx
 msgid "GM tokens represent shares in a liquidity pool for a single GMX market. Buy GM to provide liquidity and earn fees from leverage trading, swaps, and market-making activity on that specific market. All rewards are auto-compounded."
 msgstr "GM tokens represent shares in a liquidity pool for a single GMX market. Buy GM to provide liquidity and earn fees from leverage trading, swaps, and market-making activity on that specific market. All rewards are auto-compounded."
@@ -10106,6 +10164,10 @@ msgstr "Token permit testing"
 msgid "Invalid liquidation price"
 msgstr "Invalid liquidation price"
 
+#: src/components/Funded/JourneySelectorModal.tsx
+msgid "Select Funded Journey"
+msgstr "Select Funded Journey"
+
 #: src/components/GmxAccountModal/MainView.tsx
 msgid "Available to trade"
 msgstr "Available to trade"
@@ -10903,6 +10965,10 @@ msgstr "Execute TWAP Swap part"
 #: src/domain/multichain/progress/MultichainTransferProgressView.tsx
 msgid "Buy {gmOrGlvLabel} failed"
 msgstr "Buy {gmOrGlvLabel} failed"
+
+#: src/components/Funded/FundedSwitcherButton.tsx
+msgid "Select Journey"
+msgstr "Select Journey"
 
 #: src/components/Errors/ErrorBoundary.tsx
 msgid "Reload the page or report the issue if the <0/> problem persists"

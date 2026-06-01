@@ -349,6 +349,10 @@ msgstr "Telegram-бот"
 msgid "Cancel Limit Swap"
 msgstr "Отмена лимитного обмена"
 
+#: src/components/Funded/JourneySelectorModal.tsx
+msgid "Level {0}"
+msgstr ""
+
 #: src/pages/Ecosystem/ecosystemConstants.tsx
 msgid "Yield farming"
 msgstr "Фарминг доходности"
@@ -1674,6 +1678,10 @@ msgstr "Показать меньше"
 msgid "Vest"
 msgstr "Вестинг"
 
+#: src/components/Funded/FundedSwitcherButton.tsx
+msgid "Read-only"
+msgstr ""
+
 #: src/domain/synthetics/sidecarOrders/utils.ts
 msgid "Set TP price below limit price"
 msgstr ""
@@ -2382,6 +2390,10 @@ msgstr "Резервный фактор для шортов"
 msgid "Max deposit limit reached"
 msgstr "Достигнут максимальный лимит депозита"
 
+#: src/components/SideNav/FundedExpandableNavItem.tsx
+msgid "Journey Dashboard"
+msgstr ""
+
 #: src/pages/Dashboard/GmxCard.tsx
 msgid "Total staked"
 msgstr "Всего застейкано"
@@ -2590,6 +2602,11 @@ msgstr "Создание изображения, доступного для с�
 #: src/pages/LeaderboardPage/components/LeaderboardPositionsTable.tsx
 msgid "RANK"
 msgstr "РАНГ"
+
+#: src/components/Funded/FundedSwitcherButton.tsx
+#: src/components/Funded/JourneySelectorModal.tsx
+msgid "No funded journeys available"
+msgstr ""
 
 #: src/components/StatusNotification/OrderStatusNotification.tsx
 msgid "{txnTypeText} {0} order for"
@@ -3742,6 +3759,10 @@ msgstr "{0}"
 msgid "Cumulative"
 msgstr ""
 
+#: src/components/Funded/JourneySelectorModal.tsx
+msgid "Connecting..."
+msgstr ""
+
 #: src/pages/AccountTransfer/CompleteAccountTransfer/CompleteAccountTransfer.tsx
 msgid "Incorrect account"
 msgstr "Неверный аккаунт"
@@ -4156,6 +4177,10 @@ msgstr "Исходная сеть поддерживает только один
 
 #: src/components/Referrals/traders/faq.tsx
 msgid "Referral discounts apply to opening and closing fees for leverage trading. Swap fees are not included."
+msgstr ""
+
+#: src/components/Funded/FundedSwitcherButton.tsx
+msgid "Funded Mode"
 msgstr ""
 
 #: src/components/PositionShare/PositionShare.tsx
@@ -5239,6 +5264,10 @@ msgstr "Ссылки"
 msgid "Max lendable impact factor for withdrawals"
 msgstr "Макс. фактор влияния заёмных средств для выводов"
 
+#: src/components/SideNav/FundedExpandableNavItem.tsx
+msgid "My Journeys"
+msgstr ""
+
 #: src/components/Earn/Portfolio/AssetsList/GmxAssetCard/ClaimModal.tsx
 msgid "Claim completed"
 msgstr "Получение завершено"
@@ -5750,6 +5779,10 @@ msgstr "Ордер не выполнен из-за ошибки проверки
 #: src/pages/Dashboard/OverviewCard.tsx
 msgid "Botanix"
 msgstr "Botanix"
+
+#: src/components/SideNav/FundedExpandableNavItem.tsx
+msgid "Start Journey"
+msgstr ""
 
 #: src/components/GmSwap/GmFees/GmFees.tsx
 #: src/components/TradeBox/TradeBoxRows/PriceImpactFeesRow.tsx
@@ -6396,6 +6429,9 @@ msgstr ""
 #: src/App/MainRoutes.tsx
 #: src/App/MainRoutes.tsx
 #: src/App/MainRoutes.tsx
+#: src/App/MainRoutes.tsx
+#: src/App/MainRoutes.tsx
+#: src/App/MainRoutes.tsx
 #: src/components/BridgeModal/BridgeOutModal.tsx
 #: src/components/ClaimModal/ClaimModal.tsx
 #: src/components/Claims/Claims.tsx
@@ -6523,6 +6559,11 @@ msgstr "Оптимизированные по доходности хранил�
 #: src/pages/Dashboard/DashboardV2.tsx
 msgid "Analytics"
 msgstr "Аналитика"
+
+#: src/components/Funded/FundedSwitcherButton.tsx
+#: src/components/Funded/JourneySelectorModal.tsx
+msgid "Loading journeys..."
+msgstr ""
 
 #: src/components/AprInfo/AprInfo.tsx
 msgid "wstETH APR"
@@ -7541,6 +7582,10 @@ msgstr "Для участия в рейтинге необходимо испо�
 msgid "Proof of reserves"
 msgstr "Подтверждение резервов"
 
+#: src/components/Funded/FundedSwitcherButton.tsx
+msgid "Exit Funded"
+msgstr ""
+
 #: src/components/Referrals/affiliates/faq.tsx
 msgid "When will I start earning?"
 msgstr ""
@@ -8089,6 +8134,10 @@ msgstr "Введите сумму"
 msgid "You must be on this page to accept the transfer. <0>Copy link</0>."
 msgstr ""
 
+#: src/components/Funded/JourneySelectorModal.tsx
+msgid "Connect"
+msgstr ""
+
 #: src/lib/tenderly.tsx
 #: src/lib/tenderly.tsx
 msgid "for {comment}"
@@ -8212,6 +8261,10 @@ msgstr "{0} GMX"
 #: src/components/Errors/getContractErrorMessage.ts
 msgid "Price impact exceeds order size. Impact: {priceImpactUsdText}, order: {sizeDeltaUsdText}"
 msgstr "Влияние на цену превышает размер ордера. Влияние: {priceImpactUsdText}, ордер: {sizeDeltaUsdText}"
+
+#: src/components/Funded/JourneySelectorModal.tsx
+msgid "Failed to load journeys"
+msgstr ""
 
 #: src/pages/Ecosystem/ecosystemConstants.tsx
 msgid "Jones DAO"
@@ -9199,6 +9252,11 @@ msgstr "/USD"
 msgid "Express + One-Click"
 msgstr "Express + One-Click"
 
+#: src/components/SideNav/FundedExpandableNavItem.tsx
+#: src/components/SideNav/FundedExpandableNavItem.tsx
+msgid "FUNDED"
+msgstr ""
+
 #: src/components/Earn/Discovery/EarnProductCard.tsx
 msgid "GM tokens represent shares in a liquidity pool for a single GMX market. Buy GM to provide liquidity and earn fees from leverage trading, swaps, and market-making activity on that specific market. All rewards are auto-compounded."
 msgstr "Токены GM представляют собой доли в пуле ликвидности для отдельного рынка GMX. Покупайте GM, чтобы предоставлять ликвидность и получать комиссии от торговли с кредитным плечом, свопов и маркетмейкерской деятельности на этом рынке. Все вознаграждения реинвестируются автоматически."
@@ -10106,6 +10164,10 @@ msgstr "Тестирование разрешений токенов"
 msgid "Invalid liquidation price"
 msgstr "Недопустимая цена ликвидации"
 
+#: src/components/Funded/JourneySelectorModal.tsx
+msgid "Select Funded Journey"
+msgstr ""
+
 #: src/components/GmxAccountModal/MainView.tsx
 msgid "Available to trade"
 msgstr "Доступно для торговли"
@@ -10903,6 +10965,10 @@ msgstr "Исполнение части TWAP-обмена"
 #: src/domain/multichain/progress/MultichainTransferProgressView.tsx
 msgid "Buy {gmOrGlvLabel} failed"
 msgstr "Не удалось купить {gmOrGlvLabel}"
+
+#: src/components/Funded/FundedSwitcherButton.tsx
+msgid "Select Journey"
+msgstr ""
 
 #: src/components/Errors/ErrorBoundary.tsx
 msgid "Reload the page or report the issue if the <0/> problem persists"
