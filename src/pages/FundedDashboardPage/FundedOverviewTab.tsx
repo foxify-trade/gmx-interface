@@ -10,7 +10,7 @@ import { FundedOverviewChart } from "./FundedOverviewChart";
 
 function StatCard({ index, label, main, helper }: { index: string; label: string; main: ReactNode; helper?: string }) {
   return (
-    <div className="flex-1 border-r border-slate-700 px-16 py-14 last:border-r-0">
+    <div className="min-w-[140px] flex-1 border-r border-slate-700 px-16 py-14 last:border-r-0">
       <div className="text-[9px] font-semibold uppercase tracking-widest text-slate-500">
         {index}&nbsp;&nbsp;{label}
       </div>
@@ -57,7 +57,7 @@ export function FundedOverviewTab({ data }: { data: FundedDashboardData }) {
   return (
     <div className="flex flex-col pt-16">
       {/* 5 stats cards */}
-      <div className="flex overflow-hidden rounded-8 border border-slate-700 bg-[#0d111a]">
+      <div className="flex overflow-x-auto rounded-8 border border-slate-700 bg-[#0d111a] scrollbar-hide">
         <StatCard
           index="001"
           label="Points"

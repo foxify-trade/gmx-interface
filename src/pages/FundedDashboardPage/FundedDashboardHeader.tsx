@@ -64,7 +64,7 @@ export function FundedDashboardHeader({ data, activeTab, onTabChange }: Props) {
       </div>
 
       {/* Inner tab navigation */}
-      <div className="flex border-b border-slate-700">
+      <div className="flex overflow-x-auto border-b border-slate-700 scrollbar-hide">
         {INNER_TABS.map((tab) => {
           const isTabActive = activeTab === tab.id;
           const showBadge = tab.id === "level-up" && (isOnDeck || hasEnded);
@@ -74,7 +74,7 @@ export function FundedDashboardHeader({ data, activeTab, onTabChange }: Props) {
               type="button"
               onClick={() => onTabChange(tab.id)}
               className={cx(
-                "-mb-px flex items-center gap-6 border-b-2 pb-12 pr-24 text-14 font-medium transition-colors",
+                "-mb-px flex shrink-0 items-center gap-6 border-b-2 pb-12 pr-24 text-14 font-medium transition-colors",
                 isTabActive
                   ? "border-blue-400 text-blue-400"
                   : "border-transparent text-slate-400 hover:text-slate-200"
