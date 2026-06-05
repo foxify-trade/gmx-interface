@@ -13,12 +13,7 @@ import ExternalLink from "components/ExternalLink/ExternalLink";
 import ModalWithPortal from "components/Modal/ModalWithPortal";
 import LanguageModalContent from "components/NetworkDropdown/LanguageModalContent";
 
-import DashboardIcon from "img/dashboard.svg?react";
-import DatabaseIcon from "img/database.svg?react";
 import DocsIcon from "img/docs.svg?react";
-import EcosystemIcon from "img/ecosystem.svg?react";
-import EarnIcon from "img/ic_earn.svg?react";
-import ReferralsIcon from "img/ic_referrals.svg?react";
 import LeaderboardIcon from "img/leaderboard.svg?react";
 import logoIcon from "img/logo-icon.svg";
 import LogoText from "img/logo-text.svg?react";
@@ -187,26 +182,10 @@ export function MenuSection({
       key: "trade",
       to: "/trade",
     },
-    { icon: <EarnIcon className="size-20" />, label: t`Earn`, key: "earn", to: "/earn" },
-    {
-      icon: <DatabaseIcon className="size-20" />,
-      label: withMegaethSparkle(t`Pools`),
-      key: "pools",
-      to: "/pools",
-    },
-    { icon: <DashboardIcon className="size-20" />, label: t`Stats`, key: "stats", to: "/stats" },
-    {
-      icon: <ReferralsIcon className="size-20" />,
-      label: withMegaethSparkle(t`Referrals`),
-      key: "referrals",
-      to: "/referrals",
-    },
     { icon: <LeaderboardIcon className="size-20" />, label: t`Leaderboard`, key: "leaderboard", to: "/leaderboard" },
   ];
 
-  const postNavItems = [
-    { icon: <EcosystemIcon className="size-20" />, label: t`Ecosystem`, key: "ecosystem", to: "/ecosystem" },
-  ];
+  const postNavItems: typeof preNavItems = [];
 
   const { pathname } = useLocation();
 

@@ -281,3 +281,26 @@ export interface SourceFundedDashboardResponse {
     }>;
   };
 }
+
+export interface FundedChallengeRankingsItem {
+  rank: number;
+  traderAddress: string;
+  frontendId?: string | null;
+  challengeName: string | null;
+  levelRank: string | null;
+  points: number | null;
+  journeyPnL: number | null;
+  sharpeRatio: number | null;
+  calmarRatio: number | null;
+  gainToPainRatio: number | null;
+  consistencyScore: number | null;
+  favoriteAsset: string | null;
+}
+
+export interface FundedChallengeRankingsResponse {
+  total: number;
+  page: number;
+  pageSize: number;
+  totalPages: number;
+  data: FundedChallengeRankingsItem[];
+}
