@@ -5,6 +5,7 @@ import { ReactNode, useCallback, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 
 import { FUNDED_ENABLED } from "config/funded";
+import { NFT_ENABLED } from "config/nft";
 import { useTheme } from "context/ThemeContext/ThemeContext";
 import { useMegaethPointsActive } from "domain/synthetics/common/useMegaethPointsActive";
 import { useLocalStorageSerializeKey } from "lib/localStorage";
@@ -22,6 +23,7 @@ import TradeIcon from "img/trade.svg?react";
 
 import { BottomMenuSection } from "./BottomMenuSection";
 import { FundedExpandableNavItem } from "./FundedExpandableNavItem";
+import { NftExpandableNavItem } from "./NftExpandableNavItem";
 
 function SideNav({ className }: { className?: string }) {
   const [isCollapsed, setIsCollapsed] = useLocalStorageSerializeKey("is-side-nav-collapsed", false);
@@ -203,6 +205,7 @@ export function MenuSection({
         />
       ))}
       {FUNDED_ENABLED && <FundedExpandableNavItem isCollapsed={isCollapsed} onMenuItemClick={onMenuItemClick} />}
+      {NFT_ENABLED && <NftExpandableNavItem isCollapsed={isCollapsed} onMenuItemClick={onMenuItemClick} />}
       {postNavItems.map((item) => (
         <NavItem
           key={item.key}

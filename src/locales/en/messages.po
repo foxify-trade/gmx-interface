@@ -114,6 +114,10 @@ msgstr "Order could not be updated"
 msgid "See <0>Tenderly docs</0>"
 msgstr "See <0>Tenderly docs</0>"
 
+#: src/pages/NftEligibilityPage/NftEligibilityPage.tsx
+msgid "You qualify for 1 mint!"
+msgstr "You qualify for 1 mint!"
+
 #: src/components/SettingsModal/DebugSettings.tsx
 msgid "Show debug values"
 msgstr "Show debug values"
@@ -146,6 +150,10 @@ msgstr "Approval signed"
 msgid "Do I need to create codes on each network?"
 msgstr "Do I need to create codes on each network?"
 
+#: src/components/Nft/eligibility/NftEligibilityPerks.tsx
+msgid "Stake your NFT to earn bonus funding on FUNDED challenges — up to 25% extra with a Gold NFT across all integrated platforms."
+msgstr "Stake your NFT to earn bonus funding on FUNDED challenges — up to 25% extra with a Gold NFT across all integrated platforms."
+
 #: landing/src/pages/Home/RoadmapSection/Quareters.tsx
 msgid "<0>Multichain</0><1>MegaETH support</1><2>Just-in-time liquidity</2>"
 msgstr "<0>Multichain</0><1>MegaETH support</1><2>Just-in-time liquidity</2>"
@@ -153,6 +161,10 @@ msgstr "<0>Multichain</0><1>MegaETH support</1><2>Just-in-time liquidity</2>"
 #: src/components/TradeHistory/keys.ts
 msgid "Create TWAP Swap"
 msgstr "Create TWAP Swap"
+
+#: src/components/Nft/MigrateAndMintDialogs.tsx
+msgid "You have <0>{0}</0> V2 NFT{1} that can be migrated to V3."
+msgstr "You have <0>{0}</0> V2 NFT{1} that can be migrated to V3."
 
 #: src/components/GmxAccountModal/DepositView.tsx
 #: src/components/GmxAccountModal/WithdrawalView.tsx
@@ -174,6 +186,10 @@ msgstr "Arbitrum"
 msgid "Orders ({0})"
 msgstr "Orders ({0})"
 
+#: src/components/Nft/eligibility/EligibilityWalletInput.tsx
+msgid "Enter wallet address (0x...)"
+msgstr "Enter wallet address (0x...)"
+
 #: src/pages/Ecosystem/ecosystemConstants.tsx
 msgid "Telegram bot for GMX swap monitoring"
 msgstr "Telegram bot for GMX swap monitoring"
@@ -193,6 +209,11 @@ msgstr "Insufficient {0} for gas on {networkName}<0/><1/><2>Swap</2> or <3>bridg
 #: src/components/TradeboxPoolWarnings/TradeboxPoolWarnings.tsx
 msgid "Existing limit order in {0} pool but lacks liquidity for this order"
 msgstr "Existing limit order in {0} pool but lacks liquidity for this order"
+
+#: src/components/Nft/eligibility/NftMintEmailReminder.tsx
+#: src/components/Nft/eligibility/NftMintReminderButton.tsx
+msgid "Remind me"
+msgstr "Remind me"
 
 #: src/components/PositionSeller/rows/PositionSellerPriceImpactFeesRow.tsx
 msgid "Price impact from closing. Positive values benefit you. <0>Read more</0>."
@@ -273,6 +294,10 @@ msgstr "Performance"
 msgid "Total earned"
 msgstr "Total earned"
 
+#: src/components/Nft/NftStakingSection.tsx
+msgid "Unstake NFT"
+msgstr "Unstake NFT"
+
 #: src/domain/synthetics/claims/useClaimFundsTransactionCallback.tsx
 msgid "May take a few minutes"
 msgstr "May take a few minutes"
@@ -337,6 +362,11 @@ msgstr "Discover"
 msgid "GM airdrop"
 msgstr "GM airdrop"
 
+#: src/components/Nft/MigrateAndMintDialogs.tsx
+#: src/components/Nft/MigrateAndMintDialogs.tsx
+msgid "Minting…"
+msgstr "Minting…"
+
 #: src/pages/Dashboard/StatsCard.tsx
 msgid "Volume"
 msgstr "Volume"
@@ -364,6 +394,10 @@ msgstr "Roadmap"
 #: src/components/TradeHistory/useDownloadAsCsv.tsx
 msgid "FULL MARKET"
 msgstr "FULL MARKET"
+
+#: src/components/Nft/MigrateAndMintDialogs.tsx
+msgid "Migrate NFTs"
+msgstr "Migrate NFTs"
 
 #: src/components/GmxAccountModal/TransferDetailsView.tsx
 msgid "To"
@@ -447,6 +481,10 @@ msgstr "Settled funding fees"
 #: src/components/Referrals/affiliates/faq.tsx
 msgid "Rebates are paid in the collateral tokens used by your referrals. For example, if a referral trades with USDC collateral, your rebate portion will be in USDC."
 msgstr "Rebates are paid in the collateral tokens used by your referrals. For example, if a referral trades with USDC collateral, your rebate portion will be in USDC."
+
+#: src/components/Nft/eligibility/NftMintEmailReminder.tsx
+msgid "Failed to subscribe"
+msgstr "Failed to subscribe"
 
 #: src/components/TradeBox/hooks/useCollateralInTooltipContent.tsx
 msgid "Double {indexSymbol} exposure from position and collateral. Higher liquidation price than stablecoin collateral."
@@ -554,6 +592,10 @@ msgstr "Max {0} short exceeded"
 msgid "Insufficient GM balance"
 msgstr "Insufficient GM balance"
 
+#: src/components/Nft/eligibility/NftEligibilityPerks.tsx
+msgid "Exclusive Art"
+msgstr "Exclusive Art"
+
 #: src/components/Errors/getContractErrorMessage.ts
 msgid "Slippage exceeded. Expected min: {minOutputAmountText}, actual: {outputAmountText}"
 msgstr "Slippage exceeded. Expected min: {minOutputAmountText}, actual: {outputAmountText}"
@@ -628,6 +670,10 @@ msgstr "ADDRESS"
 msgid "Negative funding fees reduce margin and affect liquidation price. Positive funding fees are claimable in the Claims tab."
 msgstr "Negative funding fees reduce margin and affect liquidation price. Positive funding fees are claimable in the Claims tab."
 
+#: src/components/Nft/eligibility/NftMintEmailReminder.tsx
+msgid "Drop your email and we'll ping you when your NFT mint window opens."
+msgstr "Drop your email and we'll ping you when your NFT mint window opens."
+
 #: src/pages/Earn/EarnPageLayout.tsx
 msgid "Additional opportunities"
 msgstr "Additional opportunities"
@@ -671,6 +717,14 @@ msgstr "Edit Stop Market: {suffix}"
 msgid "Order execution price"
 msgstr "Order execution price"
 
+#: src/components/Nft/NftStakingSection.tsx
+msgid "Stake an NFT to earn bonus funding"
+msgstr "Stake an NFT to earn bonus funding"
+
+#: src/components/Nft/eligibility/NftEligibilityPerks.tsx
+msgid "NFT Perks"
+msgstr "NFT Perks"
+
 #: src/components/AllowedSwapSlippageInputRowImpl/AllowedSwapSlippageInputRowImpl.tsx
 msgid "Current swap impact: {0}. Add a 1% buffer for better execution."
 msgstr "Current swap impact: {0}. Add a 1% buffer for better execution."
@@ -682,6 +736,10 @@ msgstr "Yes. If you trade on both Arbitrum and Avalanche, apply a referral code 
 #: src/components/TradeboxPoolWarnings/TradeboxPoolWarnings.tsx
 msgid "Insufficient liquidity in any {0}/USD pool"
 msgstr "Insufficient liquidity in any {0}/USD pool"
+
+#: src/components/Nft/eligibility/NftEligibilityHero.tsx
+msgid "Wave 1 Volume"
+msgstr "Wave 1 Volume"
 
 #: src/components/TradeBox/hooks/useTradeButtonState.tsx
 msgid "Open"
@@ -801,7 +859,6 @@ msgstr "Negative value: traders pay funding"
 msgid "Transfer {nativeTokenSymbol} from other networks to {chainName}"
 msgstr "Transfer {nativeTokenSymbol} from other networks to {chainName}"
 
-#: src/components/SideNav/SideNav.tsx
 #: src/pages/Dashboard/DashboardV2.tsx
 #: src/pages/Dashboard/StatsCard.tsx
 msgid "Stats"
@@ -872,6 +929,10 @@ msgstr "STIP.b retroactive bonus"
 msgid "in liquidity"
 msgstr "in liquidity"
 
+#: src/components/Nft/MergeWarningDialog.tsx
+msgid "NFTs to be merged:"
+msgstr "NFTs to be merged:"
+
 #: src/components/TradeHistory/TradeHistoryRow/utils/position.ts
 msgid "Minimum required margin"
 msgstr "Minimum required margin"
@@ -891,6 +952,10 @@ msgstr "By claiming, you agree to the <0>GLP Reimbursement</0> terms"
 #: src/components/GmAssetDropdown/GmAssetDropdown.tsx
 msgid "Add {marketName} to wallet"
 msgstr "Add {marketName} to wallet"
+
+#: src/components/Nft/NftStakingSection.tsx
+msgid "Connect wallet to stake"
+msgstr "Connect wallet to stake"
 
 #: src/pages/SyntheticsStats/SyntheticsStats.tsx
 msgid "Position impact"
@@ -952,6 +1017,10 @@ msgstr "Fee values calculated when earned. Excludes incentives."
 msgid "Enter the referral code and save up to 10% on fees"
 msgstr "Enter the referral code and save up to 10% on fees"
 
+#: src/components/Nft/NftStakingSection.tsx
+msgid "Confirm Unstake"
+msgstr "Confirm Unstake"
+
 #: src/pages/Pools/Pools.tsx
 msgid "TVL in vaults and pools"
 msgstr "TVL in vaults and pools"
@@ -1002,10 +1071,22 @@ msgstr "1st place"
 msgid "Transaction blocked"
 msgstr "Transaction blocked"
 
+#: src/components/Nft/NftSuccessDialog.tsx
+msgid "✨ New NFT Received! ✨"
+msgstr "✨ New NFT Received! ✨"
+
+#: src/pages/LeaderboardPage/components/funded-challenge-leaderboard-table.tsx
+msgid "Rank"
+msgstr "Rank"
+
 #: src/pages/DebugOracleKeeper/parts.tsx
 #: src/pages/RpcDebug/parts.tsx
 msgid "Force primary failure"
 msgstr "Force primary failure"
+
+#: src/components/Nft/MigrateAndMintDialogs.tsx
+msgid "Note: Each address can only mint once per wave."
+msgstr "Note: Each address can only mint once per wave."
 
 #: src/components/AccruedPositionPriceImpactRebateModal/AccruedPositionPriceImpactRebateModal.tsx
 msgid "Total {0}"
@@ -1188,9 +1269,17 @@ msgstr "<0>Switch to TBTC-TBTC pool</0> for potentially lower price impact"
 msgid "Transaction:"
 msgstr "Transaction:"
 
+#: src/components/Nft/eligibility/WaveCard.tsx
+msgid "Rules"
+msgstr "Rules"
+
 #: src/components/Earn/Portfolio/AssetsList/GmxAssetCard/StakeModal.tsx
 msgid "Unstake {tokenSymbol}"
 msgstr "Unstake {tokenSymbol}"
+
+#: src/components/Nft/NftStakingSection.tsx
+msgid "No NFTs available"
+msgstr "No NFTs available"
 
 #: src/components/SettingsModal/SettingsModal.tsx
 msgid "Invalid slippage value"
@@ -1285,6 +1374,14 @@ msgstr "DATE"
 #: src/components/NetworkDropdown/SolanaNetworkItem.tsx
 msgid "Solana"
 msgstr "Solana"
+
+#: src/components/Nft/YourNftsSection.tsx
+msgid "Loading NFTs…"
+msgstr "Loading NFTs…"
+
+#: src/components/Nft/MigrateAndMintDialogs.tsx
+msgid "No V2 NFTs found in your wallet"
+msgstr "No V2 NFTs found in your wallet"
 
 #: src/domain/synthetics/trade/useMaxAutoCancelOrdersState.tsx
 msgid "Max {allowedAutoCancelOrdersNumber} auto-cancel TP/SL orders allowed. Extra orders require manual cancellation. Existing orders still close with the position. <0>Read more</0>."
@@ -1545,6 +1642,10 @@ msgstr "Send permit"
 msgid "V1 interface"
 msgstr "V1 interface"
 
+#: src/components/Nft/eligibility/VolumeProgress.tsx
+msgid "Wave 1 · 125k"
+msgstr "Wave 1 · 125k"
+
 #: src/components/Referrals/traders/faq.tsx
 msgid "How do I know if a code is good?"
 msgstr "How do I know if a code is good?"
@@ -1565,6 +1666,10 @@ msgstr "How is my fee discount applied?"
 #: src/context/SubaccountContext/SubaccountContextProvider.tsx
 msgid "Session generation failed"
 msgstr "Session generation failed"
+
+#: src/components/Nft/MigrateAndMintDialogs.tsx
+msgid "Already Claimed"
+msgstr "Already Claimed"
 
 #: src/pages/Ecosystem/ecosystemConstants.tsx
 msgid "Onchain quests and rewards"
@@ -1750,6 +1855,10 @@ msgstr "No SL orders"
 #: src/components/SettingsModal/DisplaySettings.tsx
 msgid "Manual leverage"
 msgstr "Manual leverage"
+
+#: src/components/Nft/NftMergeSelectionDialog.tsx
+msgid "Cannot merge: {0} NFT(s) are not Bronze level on-chain. Please refresh and try again."
+msgstr "Cannot merge: {0} NFT(s) are not Bronze level on-chain. Please refresh and try again."
 
 #: src/components/NotifyModal/NotifyModal.tsx
 msgid "Discover GMX alerts"
@@ -1942,6 +2051,10 @@ msgstr "Leaving GMX.io for a third-party website"
 msgid "Short net rate"
 msgstr "Short net rate"
 
+#: src/components/Nft/NftDetailDialog.tsx
+msgid "Failed to refresh metadata"
+msgstr "Failed to refresh metadata"
+
 #: src/pages/Ecosystem/ecosystemConstants.tsx
 msgid "Decentralized trading protocol"
 msgstr "Decentralized trading protocol"
@@ -1958,6 +2071,10 @@ msgstr "How it works"
 #: src/components/TradeHistory/TradeHistoryRow/utils/shared.ts
 msgid "Order is already frozen"
 msgstr "Order is already frozen"
+
+#: src/pages/NftManagementPage/NftManagementPage.tsx
+msgid "NFTs"
+msgstr "NFTs"
 
 #: src/context/SyntheticsEvents/SyntheticsEventsProvider.tsx
 msgid "{orderTypeLabel} {positionText}, -{0}"
@@ -2004,6 +2121,10 @@ msgstr "One-Click Trading is disabled. Action limit exceeded."
 #: src/components/UserIncentiveDistribution/utils.tsx
 msgid "GLP reimbursement"
 msgstr "GLP reimbursement"
+
+#: src/pages/LeaderboardPage/components/funded-challenge-leaderboard-table.tsx
+msgid "Sharpe"
+msgstr "Sharpe"
 
 #: src/components/GmSwap/GmSwapBox/GmShiftBox/useShiftSubmitState.tsx
 #: src/components/GmSwap/GmSwapBox/GmSwapBoxHeader.tsx
@@ -2164,6 +2285,10 @@ msgstr "Secure & permissionless"
 msgid "Register an affiliate code to access distributions"
 msgstr "Register an affiliate code to access distributions"
 
+#: src/components/Nft/MigrateAndMintDialogs.tsx
+msgid "You will receive <0>1 random NFT</0> which can be Bronze, Silver, or Gold tier!"
+msgstr "You will receive <0>1 random NFT</0> which can be Bronze, Silver, or Gold tier!"
+
 #: src/components/BridgeModal/BridgeOutModal.tsx
 #: src/components/BridgeModal/BridgeOutModal.tsx
 msgid "Missing parameters. Refresh and retry"
@@ -2185,6 +2310,14 @@ msgstr "Failed withdraw"
 msgid "Leftover margin below {0} USD"
 msgstr "Leftover margin below {0} USD"
 
+#: src/pages/LeaderboardPage/components/funded-challenge-leaderboard-table.tsx
+msgid "Calmar"
+msgstr "Calmar"
+
+#: src/components/Nft/NftMergeSelectionDialog.tsx
+msgid "Validating…"
+msgstr "Validating…"
+
 #: src/components/TradeHistory/keys.ts
 msgid "Failed Market Decrease"
 msgstr "Failed Market Decrease"
@@ -2192,6 +2325,10 @@ msgstr "Failed Market Decrease"
 #: src/pages/Ecosystem/ecosystemConstants.tsx
 msgid "DefiLlama"
 msgstr "DefiLlama"
+
+#: src/components/Nft/YourNftsSection.tsx
+msgid "Connect wallet to view your NFTs"
+msgstr "Connect wallet to view your NFTs"
 
 #: src/pages/AccountDashboard/DailyAndCumulativePnL.tsx
 msgid "Daily and cumulative PnL"
@@ -2212,6 +2349,10 @@ msgstr "Funding increase factor"
 #: src/components/PositionShare/CreateReferralCode.tsx
 msgid "May take a few minutes to appear. Check back later"
 msgstr "May take a few minutes to appear. Check back later"
+
+#: src/components/Nft/eligibility/EligibilityWalletInput.tsx
+msgid "Check"
+msgstr "Check"
 
 #: src/components/TradeHistory/keys.ts
 msgid "Failed deposit"
@@ -2269,6 +2410,10 @@ msgstr "Set long Stop Market @ {0}"
 #: src/components/Referrals/traders/faq.tsx
 msgid "Can I change my referral code?"
 msgstr "Can I change my referral code?"
+
+#: src/components/Nft/MigrateAndMintDialogs.tsx
+msgid "Confirm Migration"
+msgstr "Confirm Migration"
 
 #: src/components/MarketsList/MarketsList.tsx
 msgid "MARKETS"
@@ -2477,6 +2622,10 @@ msgstr "Layer 2"
 msgid "All valid codes give you at least a 5% discount. Premium affiliates (Tier 2/3) offer 10% discount. You'll see the exact discount percentage after the code has been applied."
 msgstr "All valid codes give you at least a 5% discount. Premium affiliates (Tier 2/3) offer 10% discount. You'll see the exact discount percentage after the code has been applied."
 
+#: src/components/Nft/MigrateAndMintDialogs.tsx
+msgid "Approving…"
+msgstr "Approving…"
+
 #: src/components/GmxAccountModal/DepositView.tsx
 msgid "Allow {0} spending"
 msgstr "Allow {0} spending"
@@ -2624,6 +2773,10 @@ msgstr "Max"
 msgid "GMX technical announcements"
 msgstr "GMX technical announcements"
 
+#: src/components/Nft/eligibility/EligibilityWalletInput.tsx
+msgid "Connect wallet to auto-fill"
+msgstr "Connect wallet to auto-fill"
+
 #: src/components/PositionShare/CreateReferralCode.tsx
 #: src/components/PositionShare/CreateReferralCode.tsx
 #: src/components/Referrals/affiliates/createCode/AddAffiliateCode.tsx
@@ -2643,6 +2796,19 @@ msgstr "No eligible holdings detected"
 #: src/components/InterviewModal/InterviewModal.tsx
 msgid "Help us improve GMX. For security, we won't contact you first. Send \"I have feedback\" to our official account:"
 msgstr "Help us improve GMX. For security, we won't contact you first. Send \"I have feedback\" to our official account:"
+
+#: src/components/Nft/NftDetailDialog.tsx
+#: src/components/Nft/NftStakingSection.tsx
+msgid "Staking…"
+msgstr "Staking…"
+
+#: src/pages/LeaderboardPage/components/funded-challenge-leaderboard-table.tsx
+msgid "Points"
+msgstr "Points"
+
+#: src/components/Nft/YourNftsSection.tsx
+msgid "No NFTs found in your wallet"
+msgstr "No NFTs found in your wallet"
 
 #: src/pages/Referrals/Referrals.tsx
 msgid "Affiliates"
@@ -2716,6 +2882,10 @@ msgstr "GMTrade (previously GMX Solana) is hosted on another website and run by 
 msgid "You have not traded during the selected period"
 msgstr "You have not traded during the selected period"
 
+#: src/components/Nft/eligibility/WaveCard.tsx
+msgid "Mint Date"
+msgstr "Mint Date"
+
 #: src/components/SettingsModal/TradingSettings.tsx
 msgid "Default parts for TWAP orders"
 msgstr "Default parts for TWAP orders"
@@ -2768,6 +2938,10 @@ msgstr "High slippage set. Current swap impact: {0}."
 msgid "Instant"
 msgstr "Instant"
 
+#: src/components/Nft/MigrateAndMintDialogs.tsx
+msgid "Closed"
+msgstr "Closed"
+
 #: src/components/TableMarketFilter/MarketFilterLongShort.tsx
 msgid "Open positions"
 msgstr "Open positions"
@@ -2781,6 +2955,7 @@ msgstr "Blockchain gas fee (not GMX-specific). Doesn't impact your margin."
 msgid "Coin"
 msgstr "Coin"
 
+#: src/pages/LeaderboardPage/components/funded-challenge-leaderboard-table.tsx
 #: src/pages/PriceImpactRebatesStats/PriceImpactRebatesStats.tsx
 msgid "Previous"
 msgstr "Previous"
@@ -3027,6 +3202,11 @@ msgstr "Stake submitted"
 msgid "Net"
 msgstr "Net"
 
+#: src/components/Nft/NftStakingSection.tsx
+#: src/components/Nft/NftStakingSection.tsx
+msgid "None"
+msgstr "None"
+
 #: src/context/PendingTxnsContext/PendingTxnsContext.tsx
 msgid "Transaction failed.<0/><1/><2>View</2>"
 msgstr "Transaction failed.<0/><1/><2>View</2>"
@@ -3076,6 +3256,10 @@ msgstr "Negative factor"
 msgid "Faster execution with GMX premium RPCs"
 msgstr "Faster execution with GMX premium RPCs"
 
+#: src/pages/NftEligibilityPage/NftEligibilityPage.tsx
+msgid "Check Eligibility"
+msgstr "Check Eligibility"
+
 #: src/components/OrderItem/OrderItem.tsx
 msgid "Order type"
 msgstr "Order type"
@@ -3083,6 +3267,10 @@ msgstr "Order type"
 #: src/components/TradeBox/hooks/useCollateralInTooltipContent.tsx
 msgid "Double exposure: long {indexSymbol} from position + long {collateralSymbol} from collateral. Liquidation price varies with {collateralSymbol} price."
 msgstr "Double exposure: long {indexSymbol} from position + long {collateralSymbol} from collateral. Liquidation price varies with {collateralSymbol} price."
+
+#: src/components/Nft/MigrateAndMintDialogs.tsx
+msgid "You are eligible to mint!"
+msgstr "You are eligible to mint!"
 
 #: src/components/TradeBox/TradeBoxRows/CollateralSpreadRow.tsx
 msgid "Collateral spread"
@@ -3182,6 +3370,14 @@ msgstr "AB flags"
 msgid "Wallet & GMX Account"
 msgstr "Wallet & GMX Account"
 
+#: src/components/Nft/NftStakingSection.tsx
+msgid "Connect wallet to merge"
+msgstr "Connect wallet to merge"
+
+#: src/components/SideNav/NftExpandableNavItem.tsx
+msgid "Mint Eligibility"
+msgstr "Mint Eligibility"
+
 #: src/components/TenderlySettings/TenderlySettings.tsx
 msgid "Tenderly settings"
 msgstr "Tenderly settings"
@@ -3272,6 +3468,10 @@ msgstr "GMX V2 Telegram & Discord analytics"
 msgid "Share your referral code with friends or your community —<0/> every trade made with your code earns you $-rewards"
 msgstr "Share your referral code with friends or your community —<0/> every trade made with your code earns you $-rewards"
 
+#: src/components/Nft/eligibility/NftEligibilityPerks.tsx
+msgid "Hand-crafted character NFTs with unique traits. A limited on-chain collection that reflects your trading legacy on Mune."
+msgstr "Hand-crafted character NFTs with unique traits. A limited on-chain collection that reflects your trading legacy on Mune."
+
 #: src/components/Earn/Portfolio/AssetsList/GmxAssetCard/StakeModal.tsx
 msgid "<0>Delegate your undelegated {0} GMX DAO</0> voting power before staking"
 msgstr "<0>Delegate your undelegated {0} GMX DAO</0> voting power before staking"
@@ -3325,6 +3525,10 @@ msgstr "Outstanding claimable amounts are not included"
 msgid "Insufficient {wrappedNativeTokenSymbol} for gas in your GMX Account."
 msgstr "Insufficient {wrappedNativeTokenSymbol} for gas in your GMX Account."
 
+#: src/components/Nft/NftSelectDialog.tsx
+msgid "No NFTs available to select"
+msgstr "No NFTs available to select"
+
 #: src/components/Referrals/distributions/table/RebatesDistributionTable.tsx
 #: src/components/UserIncentiveDistribution/UserIncentiveDistribution.tsx
 #: src/components/UserIncentiveDistribution/UserIncentiveDistribution.tsx
@@ -3348,6 +3552,10 @@ msgstr "Autocompound"
 #: src/components/TVChart/Chart.tsx
 msgid "Market graph"
 msgstr "Market graph"
+
+#: src/components/Nft/eligibility/VolumeProgress.tsx
+msgid "Volume Progress"
+msgstr "Volume Progress"
 
 #: src/domain/referrals/utils/referralsHelper.ts
 msgid "Only letters, numbers, and underscores allowed"
@@ -3373,6 +3581,10 @@ msgstr "Existing limit order in {0} pool<0>Switch to {1} pool</0>"
 #: src/components/Errors/errorToasts.tsx
 msgid "<0>Smart wallets not supported on {0}</0><1/><2>Switch to a different network or use an EOA wallet</2>"
 msgstr "<0>Smart wallets not supported on {0}</0><1/><2>Switch to a different network or use an EOA wallet</2>"
+
+#: src/components/Nft/eligibility/NftEligibilityHero.tsx
+msgid "Live Collection"
+msgstr "Live Collection"
 
 #: src/pages/BuyGMX/BuyGMX.tsx
 msgid "Buy from decentralized or centralized exchanges"
@@ -3469,6 +3681,10 @@ msgstr "Permit signed"
 msgid "Collapse"
 msgstr "Collapse"
 
+#: src/pages/LeaderboardPage/LeaderboardPage.tsx
+msgid "FUNDED Challenge Leaderboard"
+msgstr "FUNDED Challenge Leaderboard"
+
 #: src/pages/UiPage/BannerTest.tsx
 msgid "Banners"
 msgstr "Banners"
@@ -3493,6 +3709,10 @@ msgstr "Deposit in progress..."
 #: src/components/Referrals/affiliates/createCode/AddAffiliateCode.tsx
 msgid "Creating..."
 msgstr "Creating..."
+
+#: src/components/Nft/NftStakingSection.tsx
+msgid "NFT ID:"
+msgstr "NFT ID:"
 
 #: src/pages/Jobs/Jobs.tsx
 msgid "GMX is not actively hiring. If you think you can contribute, email <0>jobs@gmx.io</0>."
@@ -3599,6 +3819,10 @@ msgstr "What makes GMX more cost-efficient than other perpetual platforms?"
 #: src/components/Referrals/affiliates/faq.tsx
 msgid "How much can I earn as an affiliate?"
 msgstr "How much can I earn as an affiliate?"
+
+#: src/components/Nft/YourNftsSection.tsx
+msgid "Your NFTs"
+msgstr "Your NFTs"
 
 #: src/components/Errors/gasErrors.tsx
 msgid "Insufficient {localizedList} for gas on {chainName}. <0>Swap</0> or <1>bridge</1> {localizedList}."
@@ -3742,6 +3966,10 @@ msgstr "Withdraw and unreserve GMX"
 msgid "Copin"
 msgstr "Copin"
 
+#: src/components/Nft/eligibility/NftEligibilityHero.tsx
+msgid "Wave 2 Volume"
+msgstr "Wave 2 Volume"
+
 #: src/components/TradeFeesRow/TradeFeesRow.tsx
 #: src/components/TradeHistory/TradeHistoryRow/utils/position.ts
 #: src/components/TradeHistory/TradeHistoryRow/utils/position.ts
@@ -3822,6 +4050,10 @@ msgstr "Stake"
 msgid "Update TWAP part"
 msgstr "Update TWAP part"
 
+#: src/components/Nft/MergeWarningDialog.tsx
+msgid "You are about to merge {0} {1} NFTs into 1 {2} NFT."
+msgstr "You are about to merge {0} {1} NFTs into 1 {2} NFT."
+
 #: src/components/Earn/Portfolio/AssetsList/GmxAssetCard/ClaimModal.tsx
 #: src/components/Earn/Portfolio/ClaimRewardsButton.tsx
 msgid "Claim rewards"
@@ -3831,6 +4063,15 @@ msgstr "Claim rewards"
 msgid "Multicall idle"
 msgstr "Multicall idle"
 
+#: src/components/Nft/MigrateAndMintDialogs.tsx
+msgid "You have already minted in this wave"
+msgstr "You have already minted in this wave"
+
+#: src/components/Nft/NftDetailDialog.tsx
+#: src/components/Nft/NftStakingSection.tsx
+msgid "Stake Now"
+msgstr "Stake Now"
+
 #: src/components/Referrals/shared/cards/ShareReferralCardModal.tsx
 msgid "<0>Save up to {traderDiscountPercentageLabel}</0> on every<1/> trade on GMX"
 msgstr "<0>Save up to {traderDiscountPercentageLabel}</0> on every<1/> trade on GMX"
@@ -3838,6 +4079,10 @@ msgstr "<0>Save up to {traderDiscountPercentageLabel}</0> on every<1/> trade on 
 #: src/components/Referrals/shared/modals/OutOfTokenErrorAlert.tsx
 msgid "Claiming requires <0/> while you have <1/>. <2>Swap</2> or <3>deposit</3> more {0} to your GMX Account."
 msgstr "Claiming requires <0/> while you have <1/>. <2>Swap</2> or <3>deposit</3> more {0} to your GMX Account."
+
+#: src/components/Nft/YourNftsSection.tsx
+msgid "Sort By:"
+msgstr "Sort By:"
 
 #: src/components/TradeHistory/keys.ts
 msgid "Cancel TWAP"
@@ -3892,6 +4137,10 @@ msgstr "Max close amount exceeded"
 msgid "Pool max short USD for deposit"
 msgstr "Pool max short USD for deposit"
 
+#: src/components/Nft/NftDetailDialog.tsx
+msgid "OpenSea metadata refresh triggered. May take a few minutes to update."
+msgstr "OpenSea metadata refresh triggered. May take a few minutes to update."
+
 #: src/components/GmxAccountModal/DepositStatusView.tsx
 msgid "One-Click"
 msgstr "One-Click"
@@ -3940,6 +4189,10 @@ msgstr "Share GMX feedback"
 msgid "Withdraw failed"
 msgstr "Withdraw failed"
 
+#: src/components/Nft/eligibility/NftMintEmailReminder.tsx
+msgid "Saving…"
+msgstr "Saving…"
+
 #: src/pages/LeaderboardPage/components/LeaderboardAccountsTable.tsx
 msgid "Minimum {0} capital required for rankings.<0/><1/>Capital = max(sum of margin of open positions - realized PnL + starting pending PnL)."
 msgstr "Minimum {0} capital required for rankings.<0/><1/>Capital = max(sum of margin of open positions - realized PnL + starting pending PnL)."
@@ -3952,6 +4205,10 @@ msgstr "{0} balance"
 #: landing/src/pages/Home/HeroSection/Features.tsx
 msgid "numerous assets"
 msgstr "numerous assets"
+
+#: src/components/Nft/YourNftsSection.tsx
+msgid "Browse on OpenSea"
+msgstr "Browse on OpenSea"
 
 #: src/pages/DecodeError/DecodeError.tsx
 msgid "Error name:"
@@ -4037,6 +4294,10 @@ msgstr "20s"
 msgid "Virtual market ID"
 msgstr "Virtual market ID"
 
+#: src/components/Nft/NftSuccessDialog.tsx
+msgid "🎉 Awesome!"
+msgstr "🎉 Awesome!"
+
 #: src/components/OrderEditor/OrderEditor.tsx
 #: src/components/OrdersModal/AddTPSLModal.tsx
 #: src/components/PositionEditor/PositionEditorAdvancedRows.tsx
@@ -4090,6 +4351,10 @@ msgstr "Withdrawing..."
 #: src/components/Claims/ClaimsHistory.tsx
 msgid "No claims match the selected filters"
 msgstr "No claims match the selected filters"
+
+#: src/components/Nft/NftStakingSection.tsx
+msgid "Staking"
+msgstr "Staking"
 
 #: src/lib/legacy.ts
 msgid "Decentralized perpetual exchange | GMX"
@@ -4262,6 +4527,18 @@ msgstr "Copy users"
 msgid "Realized swap impact"
 msgstr "Realized swap impact"
 
+#: src/components/Nft/eligibility/NftEligibilityHero.tsx
+msgid "Snapshot Date"
+msgstr "Snapshot Date"
+
+#: src/components/Nft/MergeWarningDialog.tsx
+msgid "Result: 1 <0>{0}</0> NFT"
+msgstr "Result: 1 <0>{0}</0> NFT"
+
+#: src/components/Nft/eligibility/NftEligibilityHero.tsx
+msgid "Mint Waves"
+msgstr "Mint Waves"
+
 #: src/components/SettingsModal/DisplaySettings.tsx
 msgid "Break down net price impact"
 msgstr "Break down net price impact"
@@ -4287,6 +4564,14 @@ msgstr "Safe unstake limit: {0} GMX / esGMX"
 msgid "Swap submitted"
 msgstr "Swap submitted"
 
+#: src/components/Nft/MergeWarningDialog.tsx
+msgid "NFTs that are merged will be burned and a new NFT of a higher rarity will be minted. Are you sure you want to merge?"
+msgstr "NFTs that are merged will be burned and a new NFT of a higher rarity will be minted. Are you sure you want to merge?"
+
+#: src/components/Nft/MergeWarningDialog.tsx
+msgid "⚠️ Merge Warning"
+msgstr "⚠️ Merge Warning"
+
 #: src/components/PositionSeller/rows/AllowedSlippageRow.tsx
 #: src/components/TradeBox/TradeBoxRows/AllowedSlippageRow.tsx
 msgid "The difference between expected and actual execution price due to volatility. Orders won't execute if slippage exceeds your maximum. Adjust the default in settings.<0/><1/>A low value (e.g. less than -{0}) may cause failed orders during volatility.<2/><3/>Slippage differs from price impact, which is based on open interest imbalances. <4>Read more</4>."
@@ -4306,9 +4591,22 @@ msgstr "No net rate history for this market"
 msgid "Liquidated"
 msgstr "Liquidated"
 
+#: src/components/Nft/eligibility/WaveCard.tsx
+msgid "Eligible ✓"
+msgstr "Eligible ✓"
+
 #: src/domain/tokens/approveTokens.tsx
 msgid "Approval cancelled"
 msgstr "Approval cancelled"
+
+#: src/components/Nft/MigrateAndMintDialogs.tsx
+#: src/components/Nft/MigrateAndMintDialogs.tsx
+msgid "Mint NFT"
+msgstr "Mint NFT"
+
+#: src/components/Nft/MergeWarningDialog.tsx
+msgid "Merging…"
+msgstr "Merging…"
 
 #: src/pages/SyntheticsStats/SyntheticsStats.tsx
 #: src/pages/SyntheticsStats/SyntheticsStats.tsx
@@ -4490,9 +4788,21 @@ msgstr "Enter withdrawal amount"
 msgid "Active orders"
 msgstr "Active orders"
 
+#: src/pages/NftEligibilityPage/NftEligibilityPage.tsx
+msgid "Trade {0} more to qualify for a 2nd mint"
+msgstr "Trade {0} more to qualify for a 2nd mint"
+
 #: src/components/GmxAccountModal/MainView.tsx
 msgid "Depositing to Avalanche is disabled. Trade directly from your Avalanche wallet."
 msgstr "Depositing to Avalanche is disabled. Trade directly from your Avalanche wallet."
+
+#: src/components/Nft/MigrateAndMintDialogs.tsx
+msgid "NFTs to migrate:"
+msgstr "NFTs to migrate:"
+
+#: src/components/Nft/NftMergeSelectionDialog.tsx
+msgid "Failed to validate NFT levels. Please try again."
+msgstr "Failed to validate NFT levels. Please try again."
 
 #: src/domain/synthetics/trade/utils/validation.ts
 msgid "Buying GM unavailable"
@@ -4563,9 +4873,17 @@ msgstr "Perpetuals aggregator"
 msgid "Request Market Swap"
 msgstr "Request Market Swap"
 
+#: src/components/Nft/eligibility/NftMintEmailReminder.tsx
+msgid "Email"
+msgstr "Email"
+
 #: src/components/TradeBox/hooks/useCollateralInTooltipContent.tsx
 msgid "Pure {indexSymbol} short. Exposure is only from the position."
 msgstr "Pure {indexSymbol} short. Exposure is only from the position."
+
+#: src/components/Nft/MigrateAndMintDialogs.tsx
+msgid "{v2NftsCount} V2 NFT{0} available for migration{1}"
+msgstr "{v2NftsCount} V2 NFT{0} available for migration{1}"
 
 #: src/components/Referrals/traders/dashboard/TradersPromoCard.tsx
 msgid "Generate your own referral code and earn rebates whenever users trade with it. Rewards scale <0/> with your tier and the activity of your referred traders. <1>Read more</1>."
@@ -4586,6 +4904,7 @@ msgstr "v:"
 #: src/components/Earn/Portfolio/AssetsList/GmxAssetCard/StakeModal.tsx
 #: src/components/Earn/Portfolio/AssetsList/GmxAssetCard/StakeModal.tsx
 #: src/components/Earn/Portfolio/AssetsList/GmxAssetCard/StakeModal.tsx
+#: src/components/Nft/NftStakingSection.tsx
 msgid "Unstake"
 msgstr "Unstake"
 
@@ -4604,6 +4923,10 @@ msgstr "Processing claim..."
 #: src/context/TokensFavoritesContext/TokensFavoritesContextProvider.tsx
 msgid "Recently Listed"
 msgstr "Recently Listed"
+
+#: src/components/Nft/MigrateAndMintDialogs.tsx
+msgid "Mint a new Foxify Trading NFT. You will receive a random Bronze, Silver, or Gold NFT!"
+msgstr "Mint a new Foxify Trading NFT. You will receive a random Bronze, Silver, or Gold NFT!"
 
 #: src/pages/ParseTransaction/ParseTransaction.tsx
 msgid "Failed to load order data:"
@@ -4735,6 +5058,10 @@ msgstr "Fail external swaps"
 msgid "Withdraw"
 msgstr "Withdraw"
 
+#: src/components/Nft/eligibility/NftMintEmailReminder.tsx
+msgid "Please enter a valid email address"
+msgstr "Please enter a valid email address"
+
 #: src/components/TradeHistory/keys.ts
 msgid "Update Stop Market"
 msgstr "Update Stop Market"
@@ -4814,6 +5141,10 @@ msgstr "GM pools:"
 msgid "No price impact. Single execution price for<0/>increasing shorts or decreasing longs at<1/>this size."
 msgstr "No price impact. Single execution price for<0/>increasing shorts or decreasing longs at<1/>this size."
 
+#: src/components/Nft/NftMergeSelectionDialog.tsx
+msgid "💡 Select exactly {REQUIRED_COUNT} Bronze NFTs to merge them into 1 Silver NFT"
+msgstr "💡 Select exactly {REQUIRED_COUNT} Bronze NFTs to merge them into 1 Silver NFT"
+
 #: src/pages/ReferralsTier/ReferralsTier.tsx
 msgid "Current tier:"
 msgstr "Current tier:"
@@ -4886,6 +5217,10 @@ msgstr "GMX executes transactions without individual signing. Trades use GMX-spo
 #: src/pages/PoolsDetails/PoolsDetailsAbout.tsx
 msgid "Last rebalance"
 msgstr "Last rebalance"
+
+#: src/components/Nft/MigrateAndMintDialogs.tsx
+msgid "Mint Now"
+msgstr "Mint Now"
 
 #: src/components/DebugSwapsSettings/DebugSwapsSettings.tsx
 msgid "bps"
@@ -4965,6 +5300,11 @@ msgstr "Unknown buy GM order"
 msgid "Page outdated. Refresh"
 msgstr "Page outdated. Refresh"
 
+#: src/components/Nft/NftStakingSection.tsx
+#: src/components/Nft/NftStakingSection.tsx
+msgid "Unstaking…"
+msgstr "Unstaking…"
+
 #: src/components/Earn/Discovery/EarnProductCard.tsx
 #: src/components/GmSwap/GmSwapBox/GmSwapBoxHeader.tsx
 msgid "Buy GLV"
@@ -4973,6 +5313,10 @@ msgstr "Buy GLV"
 #: src/domain/multichain/progress/MultichainTransferProgressView.tsx
 msgid "Buy {gmOrGlvLabel} failed."
 msgstr "Buy {gmOrGlvLabel} failed."
+
+#: src/components/Nft/eligibility/NftEligibilityHero.tsx
+msgid "Foxify NFT Mint"
+msgstr "Foxify NFT Mint"
 
 #: src/pages/UiPage/BannerTest.tsx
 msgid "Existing limit order in WETH-USDC pool.<0>Switch to WETH-USDC pool</0>"
@@ -4991,7 +5335,6 @@ msgid "Net value"
 msgstr "Net value"
 
 #: src/components/Earn/Portfolio/RecommendedAssets/RecommendedAssets.tsx
-#: src/components/SideNav/SideNav.tsx
 #: src/pages/Earn/EarnPageLayout.tsx
 #: src/pages/Earn/EarnPageLayout.tsx
 msgid "Earn"
@@ -5004,6 +5347,10 @@ msgstr "Position would be immediately liquidated upon execution. Try reducing th
 #: src/components/SettingsModal/RpcDebugSettings.tsx
 msgid "Purpose: {0} | public: {1}"
 msgstr "Purpose: {0} | public: {1}"
+
+#: src/components/Nft/eligibility/NftEligibilityPerks.tsx
+msgid "Bronze, Silver, and Gold tiers each unlock escalating perks. Silver grants 10% bonus; Gold unlocks 25% extra challenge funding."
+msgstr "Bronze, Silver, and Gold tiers each unlock escalating perks. Silver grants 10% bonus; Gold unlocks 25% extra challenge funding."
 
 #: src/components/TVChart/components/OpenInterestTooltip.tsx
 msgid "Total open interest in tokens and notional value in USD"
@@ -5033,6 +5380,10 @@ msgstr "{positionTitle} orders"
 #: src/components/OrdersModal/TPSLOrdersList.tsx
 msgid "No resting orders"
 msgstr "No resting orders"
+
+#: src/components/Nft/eligibility/WaveCard.tsx
+msgid "Not eligible"
+msgstr "Not eligible"
 
 #: src/components/Earn/Portfolio/AssetsList/GmxAssetCard/GmxAssetCard.tsx
 #: src/pages/AccountTransfer/BeginAccountTransfer/BeginAccountTransfer.tsx
@@ -5166,6 +5517,10 @@ msgstr "close"
 msgid "from your wallet"
 msgstr "from your wallet"
 
+#: src/components/Nft/eligibility/EligibilityWalletInput.tsx
+msgid "Checking…"
+msgstr "Checking…"
+
 #: src/pages/UiPage/BannerTest.tsx
 msgid "Existing position uses USDC collateral. Using the selected collateral will create a separate position. <0>Switch to USDC collateral</0>"
 msgstr "Existing position uses USDC collateral. Using the selected collateral will create a separate position. <0>Switch to USDC collateral</0>"
@@ -5229,6 +5584,10 @@ msgstr "Enter a price"
 #: src/components/Referrals/traders/joinCode/getReferralCodeButtonState.tsx
 msgid "Updating..."
 msgstr "Updating..."
+
+#: src/components/Nft/NftStakingSection.tsx
+msgid "No NFT to Stake? Buy or Manage your NFTs to receive more funding"
+msgstr "No NFT to Stake? Buy or Manage your NFTs to receive more funding"
 
 #: src/components/TradeHistory/keys.ts
 msgid "Failed Market Increase"
@@ -5307,6 +5666,10 @@ msgstr "Frozen order can only be executed by an authorized keeper"
 #: src/pages/PoolsDetails/PoolsDetailsHeader.tsx
 msgid "GLV"
 msgstr "GLV"
+
+#: src/components/Nft/NftMergeSelectionDialog.tsx
+msgid "Selected: {0} / {REQUIRED_COUNT}"
+msgstr "Selected: {0} / {REQUIRED_COUNT}"
 
 #: src/components/PositionItem/PositionItem.tsx
 msgid "PnL after all fees"
@@ -5391,6 +5754,10 @@ msgstr "No swap path available. <0>Swap {0} to {swapToTokenSymbol}</0>, then to 
 msgid "Longs"
 msgstr "Longs"
 
+#: src/components/Nft/eligibility/SnapshotCountdownBanner.tsx
+msgid "Volume snapshot:"
+msgstr "Volume snapshot:"
+
 #: src/components/Referrals/shared/modals/useClaimAffiliatesModalState.ts
 msgid "Affiliate rewards claimed"
 msgstr "Affiliate rewards claimed"
@@ -5468,6 +5835,10 @@ msgstr "Main thread"
 #: src/components/Referrals/traders/joinCode/JoinReferralWizard.tsx
 msgid "Trade smarter with up<0/> to 10% fee savings"
 msgstr "Trade smarter with up<0/> to 10% fee savings"
+
+#: src/components/Nft/NftDetailDialog.tsx
+msgid "Metadata fetched (OpenSea refresh unavailable)"
+msgstr "Metadata fetched (OpenSea refresh unavailable)"
 
 #: src/pages/SyntheticsStats/SyntheticsStats.tsx
 msgid "Difference"
@@ -5677,6 +6048,11 @@ msgstr "Transfer already initiated"
 msgid "Search token"
 msgstr "Search token"
 
+#: src/components/Nft/MergeWarningDialog.tsx
+#: src/components/Nft/NftStakingSection.tsx
+msgid "Merge"
+msgstr "Merge"
+
 #: src/components/Earn/Discovery/EarnProductCard.tsx
 msgid "GLV (GMX Liquidity Vault) holds various GM tokens, giving you diversified exposure to GMX's markets. The vault auto-rebalances to high-demand markets, unlocking higher potential yield compared to isolated pools."
 msgstr "GLV (GMX Liquidity Vault) holds various GM tokens, giving you diversified exposure to GMX's markets. The vault auto-rebalances to high-demand markets, unlocking higher potential yield compared to isolated pools."
@@ -5721,6 +6097,10 @@ msgstr "Staked on Avalanche"
 #: src/pages/TestPermits/TestPermits.tsx
 msgid "s:"
 msgstr "s:"
+
+#: src/components/Nft/YourNftsSection.tsx
+msgid "{0} selected (max 5)"
+msgstr "{0} selected (max 5)"
 
 #: src/components/Errors/errorToasts.tsx
 msgid "RPC error.<0/><1/>Enable <2>Express Trading</2> in settings for better reliability"
@@ -5881,6 +6261,10 @@ msgstr "GMX (Portuguese)"
 msgid "No eligible trades during the competition window"
 msgstr "No eligible trades during the competition window"
 
+#: src/components/Nft/NftDetailDialog.tsx
+msgid "Could not refresh metadata"
+msgstr "Could not refresh metadata"
+
 #: src/components/Earn/Discovery/EarnFaq.tsx
 msgid "GMX staking is available on Arbitrum and Avalanche. GLV vaults and GM tokens vary by chain. Visit the pools page to see liquidity options for your connected network."
 msgstr "GMX staking is available on Arbitrum and Avalanche. GLV vaults and GM tokens vary by chain. Visit the pools page to see liquidity options for your connected network."
@@ -5916,6 +6300,10 @@ msgstr "ODOS"
 #: src/pages/Ecosystem/ecosystemConstants.tsx
 msgid "GMX Substack"
 msgstr "GMX Substack"
+
+#: src/components/Nft/MigrateAndMintDialogs.tsx
+msgid "Date: TBD"
+msgstr "Date: TBD"
 
 #: src/domain/synthetics/orders/utils.tsx
 msgid "Insufficient liquidity for pay-to-collateral swap at trigger price"
@@ -6061,6 +6449,10 @@ msgstr "Price on Arbitrum"
 msgid "Approval signing failed"
 msgstr "Approval signing failed"
 
+#: src/components/Nft/NftStakingSection.tsx
+msgid "Get More Funding By staking an NFT"
+msgstr "Get More Funding By staking an NFT"
+
 #: src/components/Earn/Portfolio/AssetsList/GmxAssetCard/StakeModal.tsx
 #: src/components/GmSwap/GmSwapBox/GmShiftBox/useShiftSubmitState.tsx
 #: src/components/GmSwap/GmSwapBox/GmShiftBox/useShiftSubmitState.tsx
@@ -6091,6 +6483,10 @@ msgstr "Firebird Finance"
 #: src/components/OldSubaccountWithdraw/OldSubaccountWithdraw.tsx
 msgid "{balanceFormatted} remaining in old 1CT subaccount"
 msgstr "{balanceFormatted} remaining in old 1CT subaccount"
+
+#: src/components/Nft/eligibility/EligibilityWalletInput.tsx
+msgid "Use connected wallet"
+msgstr "Use connected wallet"
 
 #: src/components/Earn/Portfolio/AssetsList/GmxAssetCard/GmxAssetCard.tsx
 msgid "Stake GMX"
@@ -6227,10 +6623,6 @@ msgstr "Protocol-wide annualized GMX buyback rate, based on the average of the l
 msgid "Swap impact exponent"
 msgstr "Swap impact exponent"
 
-#: src/pages/LeaderboardPage/LeaderboardPage.tsx
-msgid "Concluded competitions"
-msgstr "Concluded competitions"
-
 #: src/components/GmSwap/GmFees/GmFees.tsx
 msgid "0.000% / 0.000%"
 msgstr "0.000% / 0.000%"
@@ -6254,6 +6646,10 @@ msgstr "Create Stop Market"
 #: src/components/TradeboxPoolWarnings/TradeboxPoolWarnings.tsx
 msgid "Insufficient liquidity in {0} pool. Choosing a different pool creates a new position."
 msgstr "Insufficient liquidity in {0} pool. Choosing a different pool creates a new position."
+
+#: src/pages/NftEligibilityPage/NftEligibilityPage.tsx
+msgid "You qualify for 2 mints!"
+msgstr "You qualify for 2 mints!"
 
 #: src/pages/SyntheticsStats/SyntheticsStats.tsx
 msgid "Max leverage"
@@ -6343,7 +6739,6 @@ msgstr "UTILIZATION"
 msgid "No liquidity available for increasing longs at<0/>this size. Max long size: {0}<1/><2/>No price impact. Single execution price for<3/>decreasing shorts at this size."
 msgstr "No liquidity available for increasing longs at<0/>this size. Max long size: {0}<1/><2/>No price impact. Single execution price for<3/>decreasing shorts at this size."
 
-#: src/components/SideNav/SideNav.tsx
 #: src/pages/Referrals/Referrals.tsx
 #: src/pages/Referrals/Referrals.tsx
 #: src/pages/Referrals/Referrals.tsx
@@ -6432,6 +6827,8 @@ msgstr "ParaSwap"
 #: src/App/MainRoutes.tsx
 #: src/App/MainRoutes.tsx
 #: src/App/MainRoutes.tsx
+#: src/App/MainRoutes.tsx
+#: src/App/MainRoutes.tsx
 #: src/components/BridgeModal/BridgeOutModal.tsx
 #: src/components/ClaimModal/ClaimModal.tsx
 #: src/components/Claims/Claims.tsx
@@ -6454,6 +6851,7 @@ msgstr "ParaSwap"
 #: src/domain/synthetics/trade/utils/validation.ts
 #: src/pages/AccountEvents/AccountEvents.tsx
 #: src/pages/AccountEvents/AccountEvents.tsx
+#: src/pages/LeaderboardPage/components/funded-challenge-leaderboard-table.tsx
 msgid "Loading..."
 msgstr "Loading..."
 
@@ -6465,6 +6863,10 @@ msgstr "Trade now"
 #: src/pages/AccountTransfer/BeginAccountTransfer/BeginAccountTransfer.tsx
 msgid "Sender has withdrawn all tokens from the GMX vesting vault"
 msgstr "Sender has withdrawn all tokens from the GMX vesting vault"
+
+#: src/components/Nft/MigrateAndMintDialogs.tsx
+msgid "Approve"
+msgstr "Approve"
 
 #: src/components/PositionShare/PositionShare.tsx
 #: src/components/Referrals/affiliates/dashboard/AffiliatesOverviewChartCards.tsx
@@ -6527,9 +6929,21 @@ msgstr "Updating {updateOrdersCount} TP/SL orders..."
 msgid "Execution price didn't meet acceptable price"
 msgstr "Execution price didn't meet acceptable price"
 
+#: src/components/Nft/NftSuccessDialog.tsx
+msgid "Upgraded From"
+msgstr "Upgraded From"
+
 #: src/components/Referrals/affiliates/faq.tsx
 msgid "In which tokens will I receive my rebates?"
 msgstr "In which tokens will I receive my rebates?"
+
+#: src/components/Nft/eligibility/NftMintEmailReminder.tsx
+msgid "Get a mint reminder"
+msgstr "Get a mint reminder"
+
+#: src/components/Nft/eligibility/NftEligibilityHero.tsx
+msgid "Trade your way to eligibility. Qualifying wallets earn the right to mint exclusive Mune NFTs — and stake them for real protocol rewards on FUNDED challenges."
+msgstr "Trade your way to eligibility. Qualifying wallets earn the right to mint exclusive Mune NFTs — and stake them for real protocol rewards on FUNDED challenges."
 
 #: src/components/TVChartContainer/useChartContextMenu.ts
 msgid "Set long Limit @ {0}"
@@ -6556,6 +6970,10 @@ msgstr "Create your referral code and earn rebates from your referrals"
 msgid "Yield-optimized vaults supplying liquidity across multiple GMX markets"
 msgstr "Yield-optimized vaults supplying liquidity across multiple GMX markets"
 
+#: src/components/Nft/NftStakingSection.tsx
+msgid "No NFT to Stake? Buy or Merge one to receive more funding"
+msgstr "No NFT to Stake? Buy or Merge one to receive more funding"
+
 #: src/pages/Dashboard/DashboardV2.tsx
 msgid "Analytics"
 msgstr "Analytics"
@@ -6581,6 +6999,10 @@ msgstr "Estimated time to liquidation"
 #: src/components/TradeHistory/TradeHistoryRow/utils/position.ts
 msgid "Mark price for the liquidation"
 msgstr "Mark price for the liquidation"
+
+#: src/components/Nft/MigrateAndMintDialogs.tsx
+msgid "Migrate V2 NFTs to V3"
+msgstr "Migrate V2 NFTs to V3"
 
 #: src/components/GmList/GmTokensTotalBalanceInfo.tsx
 msgid "Projected from last {daysConsidered} days' APY"
@@ -6635,6 +7057,10 @@ msgstr "Trigger price for the order"
 #: src/pages/Dashboard/GmxCard.tsx
 msgid "Price"
 msgstr "Price"
+
+#: src/components/Nft/eligibility/NftEligibilityPerks.tsx
+msgid "Tier System"
+msgstr "Tier System"
 
 #: src/components/BridgeModal/BridgeOutModal.tsx
 msgid "Wallet disconnected. Reconnect and retry"
@@ -6750,6 +7176,10 @@ msgstr "What makes GMX one of the best places to earn yield on my crypto?"
 msgid "Approving {tokenSymbol}..."
 msgstr "Approving {tokenSymbol}..."
 
+#: src/components/Nft/NftStakingSection.tsx
+msgid "Are you sure you want to unstake NFT #{0}?"
+msgstr "Are you sure you want to unstake NFT #{0}?"
+
 #: src/pages/LeaderboardPage/components/LeaderboardContainer.tsx
 msgid "Top PnL (%)"
 msgstr "Top PnL (%)"
@@ -6757,6 +7187,10 @@ msgstr "Top PnL (%)"
 #: src/components/TradeHistory/TradeHistoryRow/utils/swap.ts
 msgid "Trigger price accounts for swap fees and price impact, ensuring at least {toMinText} on execution"
 msgstr "Trigger price accounts for swap fees and price impact, ensuring at least {toMinText} on execution"
+
+#: src/pages/LeaderboardPage/components/funded-challenge-leaderboard-table.tsx
+msgid "Gain/Pain"
+msgstr "Gain/Pain"
 
 #: src/components/DebugSwapsSettings/DebugSwapsSettings.tsx
 msgid "Debug swaps"
@@ -6910,6 +7344,10 @@ msgstr "Max lendable impact factor"
 #: src/pages/RpcDebug/parts.tsx
 msgid "BANNED"
 msgstr "BANNED"
+
+#: src/components/Nft/MigrateAndMintDialogs.tsx
+msgid "No whitelist proof available"
+msgstr "No whitelist proof available"
 
 #: src/pages/Ecosystem/ecosystemConstants.tsx
 msgid "Dashboard for GMX referral stats"
@@ -7100,6 +7538,7 @@ msgstr "Enable external swaps"
 msgid "BORROWING FEES"
 msgstr "BORROWING FEES"
 
+#: src/components/Nft/NftDetailDialog.tsx
 #: src/pages/TestPermits/TestPermits.tsx
 #: src/pages/TestPermits/TestPermits.tsx
 msgid "Version:"
@@ -7178,6 +7617,10 @@ msgstr "Withdrawing {0} to {1} is not supported"
 msgid "Wallet esGMX"
 msgstr "Wallet esGMX"
 
+#: src/pages/LeaderboardPage/components/funded-challenge-leaderboard-table.tsx
+msgid "Failed to load leaderboard data."
+msgstr "Failed to load leaderboard data."
+
 #: src/components/TradeboxPoolWarnings/TradeboxPoolWarnings.tsx
 msgid "Existing position is in {0} pool. Using the selected pool will create a separate position. <0>Switch to {1} pool</0>"
 msgstr "Existing position is in {0} pool. Using the selected pool will create a separate position. <0>Switch to {1} pool</0>"
@@ -7187,6 +7630,12 @@ msgstr "Existing position is in {0} pool. Using the selected pool will create a 
 msgid "Governance"
 msgstr "Governance"
 
+#: src/components/Nft/MergeWarningDialog.tsx
+#: src/components/Nft/MigrateAndMintDialogs.tsx
+#: src/components/Nft/MigrateAndMintDialogs.tsx
+#: src/components/Nft/NftMergeSelectionDialog.tsx
+#: src/components/Nft/NftSelectDialog.tsx
+#: src/components/Nft/NftStakingSection.tsx
 #: src/components/OrderItem/OrderItem.tsx
 #: src/components/OrdersModal/TPSLOrdersList.tsx
 #: src/components/StatusNotification/OrderStatusNotification.tsx
@@ -7429,6 +7878,10 @@ msgstr "Total supply"
 #: src/components/Earn/Portfolio/AssetsList/AssetsList.tsx
 msgid "My assets"
 msgstr "My assets"
+
+#: src/components/Nft/eligibility/NftEligibilityPerks.tsx
+msgid "Staking Rewards"
+msgstr "Staking Rewards"
 
 #: src/components/GmxAccountModal/GmxAccountModalDesktop.tsx
 #: src/components/GmxAccountModal/GmxAccountModalMobile.tsx
@@ -7682,6 +8135,10 @@ msgstr "Force failures"
 msgid "Re-enable"
 msgstr "Re-enable"
 
+#: src/pages/NftManagementPage/NftManagementPage.tsx
+msgid "Manage Your Foxify NFTs, stake them to earn extra funding for FUNDED challenges <0>(10% extra with Silver NFT, 25% extra with Gold NFT)</0><1/>Staked NFTs provide extra funding across <2>ALL</2> Funded platforms and integrations <3>EXCEPT app.foxify.trade</3>"
+msgstr "Manage Your Foxify NFTs, stake them to earn extra funding for FUNDED challenges <0>(10% extra with Silver NFT, 25% extra with Gold NFT)</0><1/>Staked NFTs provide extra funding across <2>ALL</2> Funded platforms and integrations <3>EXCEPT app.foxify.trade</3>"
+
 #: src/pages/AccountTransfer/BeginAccountTransfer/BeginAccountTransfer.tsx
 msgid "I do not want to transfer the Affiliate esGMX tokens"
 msgstr "I do not want to transfer the Affiliate esGMX tokens"
@@ -7814,6 +8271,10 @@ msgstr "Hide other assets"
 msgid "Staked GMX"
 msgstr "Staked GMX"
 
+#: src/components/Nft/MigrateAndMintDialogs.tsx
+msgid "Mint Foxify Trading NFT"
+msgstr "Mint Foxify Trading NFT"
+
 #: src/components/PositionItem/PositionItem.tsx
 msgid "Click the edit icon to adjust margin."
 msgstr "Click the edit icon to adjust margin."
@@ -7834,6 +8295,10 @@ msgstr "No opportunities on Botanix yet"
 #: landing/src/pages/Home/SocialSection/SocialSlider.tsx
 msgid "<0><1>#GMX V2</1>'s OI looks great</0><2>GMX V2 > GMX V1 + Kwenta + Polynomial</2><3>Check more: <4>https://tradao.xyz/#/open-interest</4></3>"
 msgstr "<0><1>#GMX V2</1>'s OI looks great</0><2>GMX V2 > GMX V1 + Kwenta + Polynomial</2><3>Check more: <4>https://tradao.xyz/#/open-interest</4></3>"
+
+#: src/components/Nft/eligibility/VolumeProgress.tsx
+msgid "Wave 2 · 250k"
+msgstr "Wave 2 · 250k"
 
 #: src/components/SettingsModal/TradingSettings.tsx
 msgid "TP/SL orders auto-cancel when the position closes. Applies only to orders created after enabling."
@@ -7898,6 +8363,10 @@ msgstr "{fromText} to {toExecutionText}"
 msgid "Total rebates"
 msgstr "Total rebates"
 
+#: src/pages/NftEligibilityPage/NftEligibilityPage.tsx
+msgid "Your wallet is eligible for both Wave 1 and Wave 2."
+msgstr "Your wallet is eligible for both Wave 1 and Wave 2."
+
 #: src/components/TradeHistory/keys.ts
 msgid "Execute Limit Swap"
 msgstr "Execute Limit Swap"
@@ -7918,6 +8387,10 @@ msgstr "Open positions with orders"
 msgid "<0>⬡ Chainlink Data Story ⬡ <1/><2>#Chainlink</2> Data Streams have secured over $56B in volume for the <3>@GMX_IO</3> V2 protocol.</0><4>Data Streams’ low-latency delivery of high-quality market data has supercharged GMX's perpetual markets across <5>@arbitrum</5> and <6>@avax</6>. <7>https://dune.com/gmx-io/gmx-analytics#v2-volume</7></4>"
 msgstr "<0>⬡ Chainlink Data Story ⬡ <1/><2>#Chainlink</2> Data Streams have secured over $56B in volume for the <3>@GMX_IO</3> V2 protocol.</0><4>Data Streams’ low-latency delivery of high-quality market data has supercharged GMX's perpetual markets across <5>@arbitrum</5> and <6>@avax</6>. <7>https://dune.com/gmx-io/gmx-analytics#v2-volume</7></4>"
 
+#: src/components/Nft/NftSuccessDialog.tsx
+msgid "⚠️ NFT traits and metadata may not appear immediately after mint due to processing delays — please check back later and refresh metadata."
+msgstr "⚠️ NFT traits and metadata may not appear immediately after mint due to processing delays — please check back later and refresh metadata."
+
 #: src/pages/SyntheticsStats/SyntheticsStats.tsx
 msgid "Min collateral factor OI long"
 msgstr "Min collateral factor OI long"
@@ -7934,10 +8407,7 @@ msgstr "Claimed"
 msgid "less than a minute"
 msgstr "less than a minute"
 
-#: src/components/SideNav/SideNav.tsx
-msgid "Ecosystem"
-msgstr "Ecosystem"
-
+#: src/pages/LeaderboardPage/components/funded-challenge-leaderboard-table.tsx
 #: src/pages/PriceImpactRebatesStats/PriceImpactRebatesStats.tsx
 msgid "Next"
 msgstr "Next"
@@ -8050,6 +8520,11 @@ msgstr "Deposit failed"
 msgid "EST. PNL"
 msgstr "EST. PNL"
 
+#: src/components/Nft/MigrateAndMintDialogs.tsx
+#: src/components/Nft/MigrateAndMintDialogs.tsx
+msgid "Migrating…"
+msgstr "Migrating…"
+
 #: src/components/Referrals/traders/joinCode/JoinReferralWizard.tsx
 msgid "Your {currentTierDiscount}% discount is now active!"
 msgstr "Your {currentTierDiscount}% discount is now active!"
@@ -8130,6 +8605,10 @@ msgstr "24h volume"
 msgid "Enter an amount"
 msgstr "Enter an amount"
 
+#: src/pages/NftEligibilityPage/NftEligibilityPage.tsx
+msgid "Not eligible yet"
+msgstr "Not eligible yet"
+
 #: src/pages/AccountTransfer/CompleteAccountTransfer/CompleteAccountTransfer.tsx
 msgid "You must be on this page to accept the transfer. <0>Copy link</0>."
 msgstr "You must be on this page to accept the transfer. <0>Copy link</0>."
@@ -8142,6 +8621,10 @@ msgstr "Connect"
 #: src/lib/tenderly.tsx
 msgid "for {comment}"
 msgstr "for {comment}"
+
+#: src/pages/LeaderboardPage/components/funded-challenge-leaderboard-table.tsx
+msgid "Challenge"
+msgstr "Challenge"
 
 #: src/components/Earn/Portfolio/RecommendedAssets/RecommendedAssets.tsx
 msgid "Performance APY"
@@ -8207,6 +8690,10 @@ msgstr "Amount exceeds the withdrawal limit. Try an amount smaller than <0>{uppe
 msgid "One-Click Trading approval nonce expired. Re-sign to continue using One-Click Trading."
 msgstr "One-Click Trading approval nonce expired. Re-sign to continue using One-Click Trading."
 
+#: src/pages/NftEligibilityPage/NftEligibilityPage.tsx
+msgid "Enter your wallet address to check if you qualify for an upcoming mint."
+msgstr "Enter your wallet address to check if you qualify for an upcoming mint."
+
 #: src/components/FavoriteTabs/RecentlyListedBadge.tsx
 #: src/components/SideNav/SupportChatNavItem.tsx
 msgid "New"
@@ -8245,6 +8732,10 @@ msgstr "Switch to {0} pool"
 #: src/pages/Ecosystem/ecosystemConstants.tsx
 msgid "Explore, analyze, and copy on-chain traders"
 msgstr "Explore, analyze, and copy on-chain traders"
+
+#: src/components/Nft/eligibility/NftMintReminderDialog.tsx
+msgid "Mint Reminder"
+msgstr "Mint Reminder"
 
 #: src/components/GmxAccountModal/TransferDetailsView.tsx
 msgid "{addressLabel} on {networkLabel}"
@@ -8350,6 +8841,10 @@ msgstr "New tier:"
 msgid "Last updated:"
 msgstr "Last updated:"
 
+#: src/components/SideNav/NftExpandableNavItem.tsx
+msgid "NFT Management"
+msgstr "NFT Management"
+
 #: src/components/Errors/getContractErrorMessage.ts
 msgid "Max pool capacity reached"
 msgstr "Max pool capacity reached"
@@ -8361,6 +8856,7 @@ msgstr "Max pool capacity reached"
 msgid "(<0>{0}</0> of {operationText} amount)"
 msgstr "(<0>{0}</0> of {operationText} amount)"
 
+#: src/components/Nft/NftDetailDialog.tsx
 #: src/components/StatusNotification/OrderStatusNotification.tsx
 #: src/components/StatusNotification/StakeNotification.tsx
 #: src/components/TransactionStatus/TransactionStatus.tsx
@@ -8379,6 +8875,10 @@ msgstr "Execute Stop Market"
 #: src/components/Referrals/traders/joinCode/JoinReferralWizard.tsx
 msgid "Go to trader dashboard"
 msgstr "Go to trader dashboard"
+
+#: src/pages/LeaderboardPage/components/funded-challenge-leaderboard-table.tsx
+msgid "Consistency"
+msgstr "Consistency"
 
 #: src/context/TokensFavoritesContext/TokensFavoritesContextProvider.tsx
 msgid "AI"
@@ -8404,6 +8904,10 @@ msgstr "Unstake failed"
 #: src/pages/PoolsDetails/PoolsDetailsHeader.tsx
 msgid "[{0}]"
 msgstr "[{0}]"
+
+#: src/components/Nft/NftMergeSelectionDialog.tsx
+msgid "Merge {0}/{REQUIRED_COUNT}"
+msgstr "Merge {0}/{REQUIRED_COUNT}"
 
 #: src/components/TVChart/ChartHeader.tsx
 #: src/components/TVChart/ChartHeader.tsx
@@ -8466,6 +8970,10 @@ msgstr "Borrowing exponent short"
 #: src/components/TradeHistory/TradeHistoryRow/utils/position.ts
 msgid "Price impact"
 msgstr "Price impact"
+
+#: src/components/Nft/YourNftsSection.tsx
+msgid "Buy NFTs on OpenSea or wait for the next mint event"
+msgstr "Buy NFTs on OpenSea or wait for the next mint event"
 
 #: src/pages/LeaderboardPage/components/LeaderboardPositionsTable.tsx
 msgid "Total realized and unrealized PnL for the period. Includes price impact and fees."
@@ -8551,6 +9059,10 @@ msgstr "Edit referral code"
 msgid "Sell request sent"
 msgstr "Sell request sent"
 
+#: src/components/Nft/NftDetailDialog.tsx
+msgid "Already Staked"
+msgstr "Already Staked"
+
 #: src/domain/synthetics/markets/createGlvWithdrawalTxn.ts
 #: src/domain/synthetics/markets/createWithdrawalTxn.ts
 msgid "Withdrawal error"
@@ -8577,6 +9089,10 @@ msgstr "Conversion execution failed"
 msgid "Create Take-Profit"
 msgstr "Create Take-Profit"
 
+#: src/components/Nft/MigrateAndMintDialogs.tsx
+msgid "Connect wallet to check eligibility"
+msgstr "Connect wallet to check eligibility"
+
 #: src/components/Errors/getContractErrorMessage.ts
 #: src/components/Errors/getContractErrorMessage.ts
 msgid "Position size exceeds available open interest. Delta: {usdDeltaText}, max OI: {openInterestText}"
@@ -8594,6 +9110,7 @@ msgstr "Total amount of GMX bought back since tracking began"
 msgid "Increase size (TWAP)"
 msgstr "Increase size (TWAP)"
 
+#: src/components/Nft/NftDetailDialog.tsx
 #: src/pages/AccountEvents/AccountEvents.tsx
 msgid "Refresh"
 msgstr "Refresh"
@@ -8638,7 +9155,6 @@ msgstr "Insufficient GM: {0} [{1}] liquidity in GLV. Choose a different pool, re
 msgid "Order filled"
 msgstr "Order filled"
 
-#: src/components/SideNav/SideNav.tsx
 #: src/pages/Pools/Pools.tsx
 #: src/pages/PoolsDetails/PoolsDetails.tsx
 msgid "Pools"
@@ -8656,6 +9172,10 @@ msgstr "VAULT"
 #: src/components/Earn/AdditionalOpportunities/useOpportunities.tsx
 msgid "Looping"
 msgstr "Looping"
+
+#: src/components/Nft/eligibility/NftMintReminderButton.tsx
+msgid "Send me an email to remind me when it's my time to mint"
+msgstr "Send me an email to remind me when it's my time to mint"
 
 #: src/pages/SyntheticsStats/SyntheticsStats.tsx
 msgid "Max reserved {directionLabel}"
@@ -8773,6 +9293,10 @@ msgstr "Express Trading and One-Click Trading are unavailable due to insufficien
 msgid "Add RPC"
 msgstr "Add RPC"
 
+#: src/components/Nft/NftStakingSection.tsx
+msgid "Buy Now"
+msgstr "Buy Now"
+
 #: src/components/TradeInfoIcon/TradeInfoIcon.tsx
 msgid "{typeString} Long Market: {0} a long position at the current price."
 msgstr "{typeString} Long Market: {0} a long position at the current price."
@@ -8784,6 +9308,11 @@ msgstr "Select a collateral"
 #: src/components/TwapRows/TwapRows.tsx
 msgid "Size per part"
 msgstr "Size per part"
+
+#: src/components/Nft/NftDetailDialog.tsx
+#: src/components/Nft/NftStakingSection.tsx
+msgid "Rarity:"
+msgstr "Rarity:"
 
 #: src/components/SettingsModal/RpcDebugSettings.tsx
 msgid "Add endpoint"
@@ -8863,6 +9392,10 @@ msgstr "Decode error"
 msgid "0x..."
 msgstr "0x..."
 
+#: src/components/Nft/NftDetailAttributes.tsx
+msgid "Attributes"
+msgstr "Attributes"
+
 #: src/components/TradeHistory/keys.ts
 msgid "Update Limit"
 msgstr "Update Limit"
@@ -8930,6 +9463,10 @@ msgstr "Wallet trading only on these networks"
 #: src/components/Earn/BuybackTracker/BuybackChart.tsx
 msgid "Weekly bought"
 msgstr "Weekly bought"
+
+#: src/components/Nft/NftStakingSection.tsx
+msgid "No NFT currently staked"
+msgstr "No NFT currently staked"
 
 #: src/pages/Earn/EarnPageLayout.tsx
 msgid "Stake GMX and buy GLV or GM to earn rewards"
@@ -9025,6 +9562,14 @@ msgstr "Onchain data error"
 msgid "Show assets with small value ({0})"
 msgstr "Show assets with small value ({0})"
 
+#: src/pages/NftEligibilityPage/NftEligibilityPage.tsx
+msgid "Start trading to reach the 125k volume threshold."
+msgstr "Start trading to reach the 125k volume threshold."
+
+#: src/components/Nft/MigrateAndMintDialogs.tsx
+msgid "Only V3 NFTs are Stakeable. Use the Migrate button to migrate all V2 NFTs in your wallet to V3."
+msgstr "Only V3 NFTs are Stakeable. Use the Migrate button to migrate all V2 NFTs in your wallet to V3."
+
 #: src/components/StatusNotification/OrderStatusNotification.tsx
 msgid "Fulfilling order request..."
 msgstr "Fulfilling order request..."
@@ -9095,6 +9640,10 @@ msgstr "Sell {operationTokenSymbol}"
 msgid "When on, leverage is set manually and determines margin and position size. When off, margin and size are set freely, and leverage is derived."
 msgstr "When on, leverage is set manually and determines margin and position size. When off, margin and size are set freely, and leverage is derived."
 
+#: src/components/Nft/eligibility/NftMintEmailReminder.tsx
+msgid "you@example.com"
+msgstr "you@example.com"
+
 #: src/lib/contracts/callContract.tsx
 #: src/lib/contracts/callContract.tsx
 #: src/lib/contracts/callContract.tsx
@@ -9136,6 +9685,7 @@ msgid "1y"
 msgstr "1y"
 
 #: src/components/Errors/ErrorBoundary.tsx
+#: src/components/Nft/eligibility/NftMintEmailReminder.tsx
 msgid "Something went wrong"
 msgstr "Something went wrong"
 
@@ -9198,6 +9748,10 @@ msgstr "Trade history"
 msgid "Exposure to backing tokens"
 msgstr "Exposure to backing tokens"
 
+#: src/pages/LeaderboardPage/components/funded-challenge-leaderboard-table.tsx
+msgid "Level"
+msgstr "Level"
+
 #: src/components/OrderList/filters/OrderTypeFilter.tsx
 msgid "Search type"
 msgstr "Search type"
@@ -9218,6 +9772,10 @@ msgstr "Buying"
 #: src/components/GmSwap/GmFees/GmFees.tsx
 msgid "shift"
 msgstr "shift"
+
+#: src/components/Nft/NftDetailDialog.tsx
+msgid "Sell Now"
+msgstr "Sell Now"
 
 #: src/components/NotifyModal/NotifyModal.tsx
 msgid "Liquidation risk alerts"
@@ -9361,6 +9919,10 @@ msgstr "Low {symbol} balance. This amount leaves little for future fees on {0}."
 msgid "Open {marketName} in explorer"
 msgstr "Open {marketName} in explorer"
 
+#: src/components/Nft/MigrateAndMintDialogs.tsx
+msgid "Connect wallet to check for V2 NFTs"
+msgstr "Connect wallet to check for V2 NFTs"
+
 #: src/components/Earn/Discovery/EarnProductCard.tsx
 msgid "What is GMX?"
 msgstr "What is GMX?"
@@ -9458,6 +10020,10 @@ msgstr "Stake {tokenSymbol}"
 #: src/components/PositionShare/PositionShare.tsx
 msgid "Link copied to clipboard"
 msgstr "Link copied to clipboard"
+
+#: src/components/Nft/eligibility/EligibilityWalletInput.tsx
+msgid "Wallet address"
+msgstr "Wallet address"
 
 #: src/components/Errors/getContractErrorMessage.ts
 msgid "Max pool capacity reached. Current: {poolAmountText}, max: {maxPoolAmountText}"
@@ -9577,6 +10143,10 @@ msgstr "ACTION"
 #: src/domain/synthetics/orders/utils.tsx
 msgid "Increase"
 msgstr "Increase"
+
+#: src/components/Nft/eligibility/NftMintEmailReminder.tsx
+msgid "Please enter your email address"
+msgstr "Please enter your email address"
 
 #: src/components/TradeFeesRow/TradeFeesRow.tsx
 #: src/components/TradeHistory/TradeHistoryRow/utils/position.ts
@@ -9853,6 +10423,10 @@ msgstr "All earnings auto-compound"
 msgid "Use the TP/SL button to set TP/SL orders."
 msgstr "Use the TP/SL button to set TP/SL orders."
 
+#: src/components/Nft/MigrateAndMintDialogs.tsx
+msgid "Your address is not whitelisted for this wave"
+msgstr "Your address is not whitelisted for this wave"
+
 #: src/components/Earn/Discovery/EarnProductCard.tsx
 msgid "What is GM?"
 msgstr "What is GM?"
@@ -9985,6 +10559,7 @@ msgstr "Optimal usage factor long"
 #: src/components/GmxAccountModal/AvailableToTradeAssetsView.tsx
 #: src/components/GmxAccountModal/MainView.tsx
 #: src/components/TokenSelector/MultichainMarketTokenSelector.tsx
+#: src/pages/LeaderboardPage/components/funded-challenge-leaderboard-table.tsx
 msgid "Wallet"
 msgstr "Wallet"
 
@@ -10036,6 +10611,10 @@ msgstr "Auto-cancel TP/SL"
 #: src/pages/SyntheticsStats/SyntheticsStats.tsx
 msgid "LIQUIDITY LONG"
 msgstr "LIQUIDITY LONG"
+
+#: src/components/Nft/NftStakingSection.tsx
+msgid "All NFTs already staked"
+msgstr "All NFTs already staked"
 
 #: src/pages/SyntheticsStats/SyntheticsStats.tsx
 msgid "PnL short"
@@ -10099,7 +10678,6 @@ msgstr "Settling..."
 
 #: src/components/SideNav/SideNav.tsx
 #: src/pages/LeaderboardPage/LeaderboardPage.tsx
-#: src/pages/LeaderboardPage/LeaderboardPage.tsx
 msgid "Leaderboard"
 msgstr "Leaderboard"
 
@@ -10118,6 +10696,10 @@ msgstr "Cancellable in ..."
 #: src/components/Seo/SEO.tsx
 msgid "GMX | decentralized perpetual exchange"
 msgstr "GMX | decentralized perpetual exchange"
+
+#: src/pages/LeaderboardPage/components/funded-challenge-leaderboard-table.tsx
+msgid "Journey P&L"
+msgstr "Journey P&L"
 
 #: src/components/Earn/BuybackTracker/BuybackChart.tsx
 #: src/pages/AccountDashboard/DailyAndCumulativePnL.tsx
@@ -10224,6 +10806,14 @@ msgstr "Depositing..."
 #: src/components/UserIncentiveDistribution/UserIncentiveDistribution.tsx
 msgid "Status"
 msgstr "Status"
+
+#: src/components/Nft/NftMergeSelectionDialog.tsx
+msgid "Select Bronze NFTs to Merge"
+msgstr "Select Bronze NFTs to Merge"
+
+#: src/pages/LeaderboardPage/LeaderboardPage.tsx
+msgid "Top FUNDED traders ranked by challenge performance"
+msgstr "Top FUNDED traders ranked by challenge performance"
 
 #: src/components/GmxAccountModal/DepositView.tsx
 msgid "30s"
@@ -10436,6 +11026,10 @@ msgstr "Distribution"
 msgid "<0>Every</0> {minutes} minutes{0}"
 msgstr "<0>Every</0> {minutes} minutes{0}"
 
+#: src/components/Nft/eligibility/EligibilityWalletInput.tsx
+msgid "Clear wallet address"
+msgstr "Clear wallet address"
+
 #: src/components/SideNav/BottomMenuSection.tsx
 #: src/components/SideNav/BottomMenuSection.tsx
 #: src/components/SideNav/LanguageNavItem.tsx
@@ -10454,6 +11048,10 @@ msgstr "GMX V1 actions"
 #: src/context/TokensFavoritesContext/TokensFavoritesContextProvider.tsx
 msgid "Indices"
 msgstr "Indices"
+
+#: src/components/Nft/YourNftsSection.tsx
+msgid "Ready to merge"
+msgstr "Ready to merge"
 
 #: src/components/Earn/Portfolio/RewardsBar.tsx
 msgid "GLV vaults:"
@@ -10474,6 +11072,10 @@ msgstr "Your current staked balance relative to your historical max. Dropping be
 #: src/components/SettingsModal/DebugSettings.tsx
 msgid "Oracle keeper monitoring"
 msgstr "Oracle keeper monitoring"
+
+#: src/components/Nft/eligibility/WaveCard.tsx
+msgid "Check wallet to see"
+msgstr "Check wallet to see"
 
 #: src/domain/synthetics/orders/getPositionOrderError.tsx
 msgid "Enter a new size or price"
@@ -10551,6 +11153,10 @@ msgstr "Insufficient liquidity in the WETH-USDC pool. Select a different pool."
 msgid "Failed to decode error. Make sure the hex data is valid and starts with \"0x\"."
 msgstr "Failed to decode error. Make sure the hex data is valid and starts with \"0x\"."
 
+#: src/components/Nft/NftMergeSelectionGrid.tsx
+msgid "No Bronze NFTs available for merging"
+msgstr "No Bronze NFTs available for merging"
+
 #: src/components/DateRangeSelect/DateRangeSelect.tsx
 #: src/components/NetRateChart/NetRateChart.tsx
 msgid "7d"
@@ -10577,9 +11183,18 @@ msgstr "Proportional stored impact"
 msgid "Rage Trade"
 msgstr "Rage Trade"
 
+#: src/components/Nft/NftStakingSection.tsx
+msgid "No NFT Staked"
+msgstr "No NFT Staked"
+
 #: src/components/NetRateChart/NetRateChart.tsx
 msgid "1h"
 msgstr "1h"
+
+#: src/components/Nft/NftCard.tsx
+#: src/components/Nft/NftDetailDialog.tsx
+msgid "NFT #{0}"
+msgstr "NFT #{0}"
 
 #: src/components/Errors/getContractErrorMessage.ts
 msgid "Insufficient funds for order costs"
@@ -10597,9 +11212,17 @@ msgstr "Save on costs"
 msgid "Open short"
 msgstr "Open short"
 
+#: src/components/Nft/NftStakingSection.tsx
+msgid "Manage"
+msgstr "Manage"
+
 #: src/components/Earn/Discovery/EarnProductCard.tsx
 msgid "Get optimized exposure to the highest-utilized pools"
 msgstr "Get optimized exposure to the highest-utilized pools"
+
+#: src/components/Nft/NftStakingSection.tsx
+msgid "You will lose the extra funding bonus while this NFT is unstaked."
+msgstr "You will lose the extra funding bonus while this NFT is unstaked."
 
 #: src/components/MarketSelector/MarketSelector.tsx
 #: src/components/MarketsList/MarketsList.tsx
@@ -10633,6 +11256,10 @@ msgstr "Existing position is in WETH-USDC pool. Using the selected pool will cre
 #: src/components/TVChartContainer/useChartContextMenu.ts
 msgid "Set short Take-Profit @ {0}"
 msgstr "Set short Take-Profit @ {0}"
+
+#: src/components/Nft/eligibility/NftMintEmailReminder.tsx
+msgid "We'll email you before the mint goes live."
+msgstr "We'll email you before the mint goes live."
 
 #: src/components/Claims/ClaimsHistory.tsx
 #: src/components/TradeHistory/useDownloadAsCsv.tsx
@@ -10768,6 +11395,10 @@ msgstr "Delta neutral vaults"
 msgid "Sending shift request..."
 msgstr "Sending shift request..."
 
+#: src/components/Nft/MigrateAndMintDialogs.tsx
+msgid "No active mint wave"
+msgstr "No active mint wave"
+
 #: src/pages/AccountDashboard/DailyAndCumulativePnL.tsx
 msgid "PNG"
 msgstr "PNG"
@@ -10845,6 +11476,10 @@ msgstr "Referral code created"
 #: src/domain/multichain/progress/MultichainTransferProgressView.tsx
 msgid "Funds bridging to..."
 msgstr "Funds bridging to..."
+
+#: src/components/Nft/MigrateAndMintDialogs.tsx
+msgid "Migrate"
+msgstr "Migrate"
 
 #: src/components/BridgeModal/BridgeInModal.tsx
 #: src/components/BridgeModal/BridgeOutModal.tsx
@@ -10940,6 +11575,10 @@ msgstr "Invalid receiver address"
 #: src/components/Earn/Portfolio/AssetsList/GmxAssetCard/VestModal.tsx
 msgid "Withdraw submitted"
 msgstr "Withdraw submitted"
+
+#: src/components/Nft/eligibility/NftMintEmailReminder.tsx
+msgid "You're on the list!"
+msgstr "You're on the list!"
 
 #: src/components/GmxAccountModal/MainView.tsx
 msgid "Funding activity"
@@ -11076,6 +11715,11 @@ msgstr "Take-Profit"
 msgid "Your staking power was reset {0} due to dropping below the 80% loyalty threshold. Power is now accruing again from your current balance."
 msgstr "Your staking power was reset {0} due to dropping below the 80% loyalty threshold. Power is now accruing again from your current balance."
 
+#: src/components/SideNav/NftExpandableNavItem.tsx
+#: src/components/SideNav/NftExpandableNavItem.tsx
+msgid "NFT"
+msgstr "NFT"
+
 #: src/components/OrderEditor/OrderEditor.tsx
 msgid "Take-Profit price"
 msgstr "Take-Profit price"
@@ -11106,6 +11750,10 @@ msgstr "Set trigger price above mark price"
 msgid "No opportunities on this chain yet"
 msgstr "No opportunities on this chain yet"
 
+#: src/components/Nft/NftDetailDialog.tsx
+msgid "Refreshing…"
+msgstr "Refreshing…"
+
 #: src/components/OrderItem/OrderItem.tsx
 msgid "<0>{fromTokenText} </0>{fromTokenIcon}<1> to </1>{0}{toTokenIcon}{1}"
 msgstr "<0>{fromTokenText} </0>{fromTokenIcon}<1> to </1>{0}{toTokenIcon}{1}"
@@ -11121,6 +11769,10 @@ msgstr "Where do I find a referral code?"
 #: src/components/Errors/errorToasts.tsx
 msgid "Enable <0>Express Trading</0> in settings for better reliability.<1/><2/>Or increase the max network fee buffer {bufferText} in {settingsLink}"
 msgstr "Enable <0>Express Trading</0> in settings for better reliability.<1/><2/>Or increase the max network fee buffer {bufferText} in {settingsLink}"
+
+#: src/components/Nft/eligibility/WaveCard.tsx
+msgid "Criteria"
+msgstr "Criteria"
 
 #: src/components/OrderEditor/OrderEditor.tsx
 msgid "Enter a ratio"

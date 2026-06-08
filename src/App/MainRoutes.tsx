@@ -5,6 +5,7 @@ import type { Address } from "viem";
 
 import { isDevelopment } from "config/env";
 import { FUNDED_ENABLED } from "config/funded";
+import { NFT_ENABLED } from "config/nft";
 import { SyntheticsStateContextProvider } from "context/SyntheticsStateContext/SyntheticsStateContextProvider";
 import { useChainId } from "lib/chains";
 import { AccountDashboard } from "pages/AccountDashboard/AccountDashboard";
@@ -115,6 +116,28 @@ const FundedMyJourneysPage = () => (
   </Suspense>
 );
 
+const LazyNftManagementPage = lazy(() =>
+  import("pages/NftManagementPage/NftManagementPage").then((module) => ({
+    default: module.NftManagementPage,
+  }))
+);
+const NftManagementPage = () => (
+  <Suspense fallback={<Trans>Loading...</Trans>}>
+    <LazyNftManagementPage />
+  </Suspense>
+);
+
+const LazyNftEligibilityPage = lazy(() =>
+  import("pages/NftEligibilityPage/NftEligibilityPage").then((module) => ({
+    default: module.NftEligibilityPage,
+  }))
+);
+const NftEligibilityPage = () => (
+  <Suspense fallback={<Trans>Loading...</Trans>}>
+    <LazyNftEligibilityPage />
+  </Suspense>
+);
+
 export function MainRoutes({ openSettings }: { openSettings: () => void }) {
   const { chainId } = useChainId();
 
@@ -202,6 +225,8 @@ export function MainRoutes({ openSettings }: { openSettings: () => void }) {
       <Route exact path="/funded/challenge-dashboard">
         {FUNDED_ENABLED ? <FundedDashboardPage /> : <PageNotFound />}
       </Route>
+      <Route exact path="/nft">{NFT_ENABLED ? <NftManagementPage /> : <PageNotFound />}</Route>
+      <Route exact path="/nft/eligibility">{NFT_ENABLED ? <NftEligibilityPage /> : <PageNotFound />}</Route>
       <Route exact path="/jobs">
         <Jobs />
       </Route>

@@ -1,0 +1,750 @@
+{
+  "address": "0xE7594eF4D3a622ED70D45735bbE43972a05655cC",
+  "abi": [
+    {
+      "inputs": [
+        { "internalType": "string", "name": "name_", "type": "string" },
+        { "internalType": "string", "name": "symbol_", "type": "string" },
+        { "internalType": "string", "name": "baseTokenURI_", "type": "string" },
+        { "internalType": "contract IFoxifyTradingNFT[]", "name": "previousAffiliation_", "type": "address[]" }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        { "indexed": true, "internalType": "address", "name": "owner", "type": "address" },
+        { "indexed": true, "internalType": "address", "name": "approved", "type": "address" },
+        { "indexed": true, "internalType": "uint256", "name": "tokenId", "type": "uint256" }
+      ],
+      "name": "Approval",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        { "indexed": true, "internalType": "address", "name": "owner", "type": "address" },
+        { "indexed": true, "internalType": "address", "name": "operator", "type": "address" },
+        { "indexed": false, "internalType": "bool", "name": "approved", "type": "bool" }
+      ],
+      "name": "ApprovalForAll",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [{ "indexed": false, "internalType": "string", "name": "uri", "type": "string" }],
+      "name": "BaseURIUpdated",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        { "indexed": false, "internalType": "address[]", "name": "userList", "type": "address[]" },
+        { "indexed": false, "internalType": "uint256[]", "name": "tokenIds", "type": "uint256[]" }
+      ],
+      "name": "BatchMigrated",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "components": [
+            { "internalType": "bool", "name": "bronzeToSilver", "type": "bool" },
+            { "internalType": "bool", "name": "silverToGold", "type": "bool" }
+          ],
+          "indexed": false,
+          "internalType": "struct IFoxifyTradingNFTBase.MergeLevelPermissions",
+          "name": "permissions",
+          "type": "tuple"
+        }
+      ],
+      "name": "MergeLevelPermissionsUpdated",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "components": [
+            { "internalType": "uint256", "name": "bronzeToSilver", "type": "uint256" },
+            { "internalType": "uint256", "name": "silverToGold", "type": "uint256" }
+          ],
+          "indexed": false,
+          "internalType": "struct IFoxifyTradingNFTBase.MergeLevelRates",
+          "name": "rates",
+          "type": "tuple"
+        }
+      ],
+      "name": "MergeLevelRatesUpdated",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        { "indexed": true, "internalType": "uint256", "name": "tokenId", "type": "uint256" },
+        { "indexed": false, "internalType": "uint256[]", "name": "ids", "type": "uint256[]" },
+        { "indexed": false, "internalType": "enum IFoxifyTradingNFTBase.Level", "name": "from", "type": "uint8" },
+        { "indexed": false, "internalType": "enum IFoxifyTradingNFTBase.Level", "name": "to", "type": "uint8" }
+      ],
+      "name": "Merged",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        { "indexed": true, "internalType": "address", "name": "migrator", "type": "address" },
+        { "indexed": false, "internalType": "uint256[]", "name": "tokenIds", "type": "uint256[]" }
+      ],
+      "name": "Migrated",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        { "indexed": true, "internalType": "address", "name": "recipient", "type": "address" },
+        { "indexed": false, "internalType": "uint256", "name": "tokenId", "type": "uint256" },
+        {
+          "components": [
+            { "internalType": "enum IFoxifyTradingNFTBase.Level", "name": "level", "type": "uint8" },
+            { "internalType": "bytes32", "name": "randomValue", "type": "bytes32" },
+            { "internalType": "uint256", "name": "timestamp", "type": "uint256" }
+          ],
+          "indexed": false,
+          "internalType": "struct IFoxifyTradingNFTBase.NFTData",
+          "name": "data",
+          "type": "tuple"
+        }
+      ],
+      "name": "Minted",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        { "indexed": true, "internalType": "address", "name": "previousOwner", "type": "address" },
+        { "indexed": true, "internalType": "address", "name": "newOwner", "type": "address" }
+      ],
+      "name": "OwnershipTransferred",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        { "indexed": true, "internalType": "address", "name": "from", "type": "address" },
+        { "indexed": true, "internalType": "address", "name": "to", "type": "address" },
+        { "indexed": true, "internalType": "uint256", "name": "tokenId", "type": "uint256" }
+      ],
+      "name": "Transfer",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        { "indexed": true, "internalType": "address", "name": "user", "type": "address" },
+        { "indexed": true, "internalType": "uint256", "name": "tokenId", "type": "uint256" }
+      ],
+      "name": "UserActiveIDUpdated",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        { "indexed": false, "internalType": "uint256", "name": "index", "type": "uint256" },
+        {
+          "components": [
+            { "internalType": "bytes32", "name": "root", "type": "bytes32" },
+            { "internalType": "uint256", "name": "start", "type": "uint256" },
+            { "internalType": "uint256", "name": "end", "type": "uint256" },
+            {
+              "components": [
+                { "internalType": "uint256", "name": "bronze", "type": "uint256" },
+                { "internalType": "uint256", "name": "silver", "type": "uint256" },
+                { "internalType": "uint256", "name": "gold", "type": "uint256" }
+              ],
+              "internalType": "struct IFoxifyTradingNFTBase.LevelsDistribution",
+              "name": "distribution",
+              "type": "tuple"
+            }
+          ],
+          "indexed": false,
+          "internalType": "struct IFoxifyTradingNFTBase.Wave",
+          "name": "wave",
+          "type": "tuple"
+        }
+      ],
+      "name": "WaveScheduled",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "components": [
+            { "internalType": "bytes32", "name": "root", "type": "bytes32" },
+            { "internalType": "uint256", "name": "start", "type": "uint256" },
+            { "internalType": "uint256", "name": "end", "type": "uint256" },
+            {
+              "components": [
+                { "internalType": "uint256", "name": "bronze", "type": "uint256" },
+                { "internalType": "uint256", "name": "silver", "type": "uint256" },
+                { "internalType": "uint256", "name": "gold", "type": "uint256" }
+              ],
+              "internalType": "struct IFoxifyTradingNFTBase.LevelsDistribution",
+              "name": "distribution",
+              "type": "tuple"
+            }
+          ],
+          "indexed": false,
+          "internalType": "struct IFoxifyTradingNFTBase.Wave",
+          "name": "wave",
+          "type": "tuple"
+        }
+      ],
+      "name": "WaveUnscheduled",
+      "type": "event"
+    },
+    {
+      "inputs": [
+        { "internalType": "address", "name": "to", "type": "address" },
+        { "internalType": "uint256", "name": "tokenId", "type": "uint256" }
+      ],
+      "name": "approve",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [{ "internalType": "address", "name": "owner", "type": "address" }],
+      "name": "balanceOf",
+      "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "components": [
+            { "internalType": "address", "name": "from", "type": "address" },
+            { "internalType": "address", "name": "to", "type": "address" },
+            { "internalType": "uint256", "name": "id", "type": "uint256" }
+          ],
+          "internalType": "struct IFoxifyTradingNFTBase.BatchParams[]",
+          "name": "params",
+          "type": "tuple[]"
+        }
+      ],
+      "name": "batchTransferFrom",
+      "outputs": [{ "internalType": "bool", "name": "", "type": "bool" }],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }],
+      "name": "blackListIds",
+      "outputs": [{ "internalType": "bool", "name": "", "type": "bool" }],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        { "internalType": "uint256", "name": "", "type": "uint256" },
+        { "internalType": "address", "name": "", "type": "address" }
+      ],
+      "name": "claimed",
+      "outputs": [{ "internalType": "bool", "name": "", "type": "bool" }],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "currentWave",
+      "outputs": [
+        { "internalType": "uint256", "name": "id", "type": "uint256" },
+        {
+          "components": [
+            { "internalType": "bytes32", "name": "root", "type": "bytes32" },
+            { "internalType": "uint256", "name": "start", "type": "uint256" },
+            { "internalType": "uint256", "name": "end", "type": "uint256" },
+            {
+              "components": [
+                { "internalType": "uint256", "name": "bronze", "type": "uint256" },
+                { "internalType": "uint256", "name": "silver", "type": "uint256" },
+                { "internalType": "uint256", "name": "gold", "type": "uint256" }
+              ],
+              "internalType": "struct IFoxifyTradingNFTBase.LevelsDistribution",
+              "name": "distribution",
+              "type": "tuple"
+            }
+          ],
+          "internalType": "struct IFoxifyTradingNFTBase.Wave",
+          "name": "output",
+          "type": "tuple"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }],
+      "name": "data",
+      "outputs": [
+        { "internalType": "enum IFoxifyTradingNFTBase.Level", "name": "level", "type": "uint8" },
+        { "internalType": "bytes32", "name": "randomValue", "type": "bytes32" },
+        { "internalType": "uint256", "name": "timestamp", "type": "uint256" }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        { "internalType": "uint256", "name": "offset", "type": "uint256" },
+        { "internalType": "uint256", "name": "limit", "type": "uint256" }
+      ],
+      "name": "dataList",
+      "outputs": [
+        {
+          "components": [
+            { "internalType": "enum IFoxifyTradingNFTBase.Level", "name": "level", "type": "uint8" },
+            { "internalType": "bytes32", "name": "randomValue", "type": "bytes32" },
+            { "internalType": "uint256", "name": "timestamp", "type": "uint256" }
+          ],
+          "internalType": "struct IFoxifyTradingNFTBase.NFTData[]",
+          "name": "output",
+          "type": "tuple[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [{ "internalType": "uint256", "name": "tokenId", "type": "uint256" }],
+      "name": "exists",
+      "outputs": [{ "internalType": "bool", "name": "", "type": "bool" }],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [{ "internalType": "uint256", "name": "tokenId", "type": "uint256" }],
+      "name": "getApproved",
+      "outputs": [{ "internalType": "address", "name": "", "type": "address" }],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        { "internalType": "address", "name": "owner", "type": "address" },
+        { "internalType": "address", "name": "operator", "type": "address" }
+      ],
+      "name": "isApprovedForAll",
+      "outputs": [{ "internalType": "bool", "name": "", "type": "bool" }],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        { "internalType": "uint256[]", "name": "ids", "type": "uint256[]" },
+        { "internalType": "enum IFoxifyTradingNFTBase.Level", "name": "from", "type": "uint8" }
+      ],
+      "name": "merge",
+      "outputs": [{ "internalType": "bool", "name": "", "type": "bool" }],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "mergeLevelPermissions",
+      "outputs": [
+        { "internalType": "bool", "name": "bronzeToSilver", "type": "bool" },
+        { "internalType": "bool", "name": "silverToGold", "type": "bool" }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "mergeLevelRates",
+      "outputs": [
+        { "internalType": "uint256", "name": "bronzeToSilver", "type": "uint256" },
+        { "internalType": "uint256", "name": "silverToGold", "type": "uint256" }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        { "internalType": "uint256[]", "name": "versions", "type": "uint256[]" },
+        { "internalType": "uint256[]", "name": "tokenIds", "type": "uint256[]" }
+      ],
+      "name": "migrate",
+      "outputs": [{ "internalType": "bool", "name": "", "type": "bool" }],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [{ "internalType": "bytes32[]", "name": "merkleProof", "type": "bytes32[]" }],
+      "name": "mintRequest",
+      "outputs": [{ "internalType": "bool", "name": "", "type": "bool" }],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "name",
+      "outputs": [{ "internalType": "string", "name": "", "type": "string" }],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "owner",
+      "outputs": [{ "internalType": "address", "name": "", "type": "address" }],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [{ "internalType": "uint256", "name": "tokenId", "type": "uint256" }],
+      "name": "ownerOf",
+      "outputs": [{ "internalType": "address", "name": "", "type": "address" }],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }],
+      "name": "previousAffiliation",
+      "outputs": [{ "internalType": "contract IFoxifyTradingNFT", "name": "", "type": "address" }],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        { "internalType": "uint256[]", "name": "versions", "type": "uint256[]" },
+        { "internalType": "uint256[]", "name": "tokenIds", "type": "uint256[]" }
+      ],
+      "name": "processBatchMigration",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        { "internalType": "uint256[]", "name": "tokenIds", "type": "uint256[]" },
+        { "internalType": "bool", "name": "status", "type": "bool" }
+      ],
+      "name": "processBlackList",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        { "internalType": "address", "name": "user", "type": "address" },
+        { "internalType": "enum IFoxifyTradingNFTBase.Level", "name": "level", "type": "uint8" }
+      ],
+      "name": "processMint",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    { "inputs": [], "name": "renounceOwnership", "outputs": [], "stateMutability": "nonpayable", "type": "function" },
+    {
+      "inputs": [
+        { "internalType": "address", "name": "from", "type": "address" },
+        { "internalType": "address", "name": "to", "type": "address" },
+        { "internalType": "uint256", "name": "tokenId", "type": "uint256" }
+      ],
+      "name": "safeTransferFrom",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        { "internalType": "address", "name": "from", "type": "address" },
+        { "internalType": "address", "name": "to", "type": "address" },
+        { "internalType": "uint256", "name": "tokenId", "type": "uint256" },
+        { "internalType": "bytes", "name": "data", "type": "bytes" }
+      ],
+      "name": "safeTransferFrom",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "components": [
+            { "internalType": "bytes32", "name": "root", "type": "bytes32" },
+            { "internalType": "uint256", "name": "start", "type": "uint256" },
+            { "internalType": "uint256", "name": "end", "type": "uint256" },
+            {
+              "components": [
+                { "internalType": "uint256", "name": "bronze", "type": "uint256" },
+                { "internalType": "uint256", "name": "silver", "type": "uint256" },
+                { "internalType": "uint256", "name": "gold", "type": "uint256" }
+              ],
+              "internalType": "struct IFoxifyTradingNFTBase.LevelsDistribution",
+              "name": "distribution",
+              "type": "tuple"
+            }
+          ],
+          "internalType": "struct IFoxifyTradingNFTBase.Wave",
+          "name": "wave",
+          "type": "tuple"
+        },
+        { "internalType": "uint256", "name": "totalShare", "type": "uint256" }
+      ],
+      "name": "scheduleWave",
+      "outputs": [{ "internalType": "bool", "name": "", "type": "bool" }],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        { "internalType": "address", "name": "operator", "type": "address" },
+        { "internalType": "bool", "name": "approved", "type": "bool" }
+      ],
+      "name": "setApprovalForAll",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [{ "internalType": "bytes4", "name": "interfaceId", "type": "bytes4" }],
+      "name": "supportsInterface",
+      "outputs": [{ "internalType": "bool", "name": "", "type": "bool" }],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "symbol",
+      "outputs": [{ "internalType": "string", "name": "", "type": "string" }],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [{ "internalType": "uint256", "name": "index", "type": "uint256" }],
+      "name": "tokenByIndex",
+      "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        { "internalType": "address", "name": "owner", "type": "address" },
+        { "internalType": "uint256", "name": "index", "type": "uint256" }
+      ],
+      "name": "tokenOfOwnerByIndex",
+      "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [{ "internalType": "uint256", "name": "tokenId", "type": "uint256" }],
+      "name": "tokenURI",
+      "outputs": [{ "internalType": "string", "name": "", "type": "string" }],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "tokensCount",
+      "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "totalSupply",
+      "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        { "internalType": "address", "name": "from", "type": "address" },
+        { "internalType": "address", "name": "to", "type": "address" },
+        { "internalType": "uint256", "name": "tokenId", "type": "uint256" }
+      ],
+      "name": "transferFrom",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [{ "internalType": "address", "name": "newOwner", "type": "address" }],
+      "name": "transferOwnership",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [{ "internalType": "uint256", "name": "index", "type": "uint256" }],
+      "name": "unscheduleWave",
+      "outputs": [{ "internalType": "bool", "name": "", "type": "bool" }],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [{ "internalType": "string", "name": "uri", "type": "string" }],
+      "name": "updateBaseURI",
+      "outputs": [{ "internalType": "bool", "name": "", "type": "bool" }],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "components": [
+            { "internalType": "bool", "name": "bronzeToSilver", "type": "bool" },
+            { "internalType": "bool", "name": "silverToGold", "type": "bool" }
+          ],
+          "internalType": "struct IFoxifyTradingNFTBase.MergeLevelPermissions",
+          "name": "permissions",
+          "type": "tuple"
+        }
+      ],
+      "name": "updateMergeLevelPermissions",
+      "outputs": [{ "internalType": "bool", "name": "", "type": "bool" }],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "components": [
+            { "internalType": "uint256", "name": "bronzeToSilver", "type": "uint256" },
+            { "internalType": "uint256", "name": "silverToGold", "type": "uint256" }
+          ],
+          "internalType": "struct IFoxifyTradingNFTBase.MergeLevelRates",
+          "name": "rates",
+          "type": "tuple"
+        }
+      ],
+      "name": "updateMergeLevelRates",
+      "outputs": [{ "internalType": "bool", "name": "", "type": "bool" }],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [{ "internalType": "uint256", "name": "tokenId", "type": "uint256" }],
+      "name": "updateUserActiveID",
+      "outputs": [{ "internalType": "bool", "name": "", "type": "bool" }],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [{ "internalType": "address", "name": "", "type": "address" }],
+      "name": "usersActiveID",
+      "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        { "internalType": "address", "name": "user", "type": "address" },
+        { "internalType": "uint256", "name": "index", "type": "uint256" }
+      ],
+      "name": "usersIDs",
+      "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        { "internalType": "address", "name": "user", "type": "address" },
+        { "internalType": "uint256", "name": "id", "type": "uint256" }
+      ],
+      "name": "usersIDsContains",
+      "outputs": [{ "internalType": "bool", "name": "", "type": "bool" }],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [{ "internalType": "address", "name": "user", "type": "address" }],
+      "name": "usersIDsLength",
+      "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        { "internalType": "address", "name": "user", "type": "address" },
+        { "internalType": "uint256", "name": "offset", "type": "uint256" },
+        { "internalType": "uint256", "name": "limit", "type": "uint256" }
+      ],
+      "name": "usersIDsList",
+      "outputs": [{ "internalType": "uint256[]", "name": "output", "type": "uint256[]" }],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }],
+      "name": "waveShare",
+      "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }],
+      "name": "waves",
+      "outputs": [
+        { "internalType": "bytes32", "name": "root", "type": "bytes32" },
+        { "internalType": "uint256", "name": "start", "type": "uint256" },
+        { "internalType": "uint256", "name": "end", "type": "uint256" },
+        {
+          "components": [
+            { "internalType": "uint256", "name": "bronze", "type": "uint256" },
+            { "internalType": "uint256", "name": "silver", "type": "uint256" },
+            { "internalType": "uint256", "name": "gold", "type": "uint256" }
+          ],
+          "internalType": "struct IFoxifyTradingNFTBase.LevelsDistribution",
+          "name": "distribution",
+          "type": "tuple"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "wavesLength",
+      "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        { "internalType": "uint256", "name": "offset", "type": "uint256" },
+        { "internalType": "uint256", "name": "limit", "type": "uint256" }
+      ],
+      "name": "wavesList",
+      "outputs": [
+        {
+          "components": [
+            { "internalType": "bytes32", "name": "root", "type": "bytes32" },
+            { "internalType": "uint256", "name": "start", "type": "uint256" },
+            { "internalType": "uint256", "name": "end", "type": "uint256" },
+            {
+              "components": [
+                { "internalType": "uint256", "name": "bronze", "type": "uint256" },
+                { "internalType": "uint256", "name": "silver", "type": "uint256" },
+                { "internalType": "uint256", "name": "gold", "type": "uint256" }
+              ],
+              "internalType": "struct IFoxifyTradingNFTBase.LevelsDistribution",
+              "name": "distribution",
+              "type": "tuple"
+            }
+          ],
+          "internalType": "struct IFoxifyTradingNFTBase.Wave[]",
+          "name": "output",
+          "type": "tuple[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ]
+}
