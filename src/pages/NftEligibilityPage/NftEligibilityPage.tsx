@@ -69,10 +69,10 @@ export function NftEligibilityPage() {
 
   return (
     <AppPageLayout title="NFT Mint Eligibility" header={<ChainContentHeader />}>
-      <div className="page-layout flex flex-col gap-24">
+      <div className="page-layout mx-auto flex w-full max-w-6xl flex-col gap-24">
         <NftEligibilityHero />
 
-        <div className="w-full">
+        <div className="mx-auto w-full max-w-4xl">
           <section className="rounded-8 border border-[#3a3f50] bg-[#16182a] p-20 lg:p-24 flex flex-col gap-20">
             <div>
               <h2 className="text-16 font-semibold text-white">
