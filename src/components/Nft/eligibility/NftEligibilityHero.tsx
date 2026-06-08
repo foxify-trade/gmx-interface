@@ -1,6 +1,8 @@
 import { Trans } from "@lingui/macro";
 import cx from "classnames";
 
+import nftMintHeroPng from "img/nft-mint-hero.png";
+
 const STATS = [
   { label: <Trans>Mint Waves</Trans>, value: "2" },
   { label: <Trans>Snapshot Date</Trans>, value: "Jul 1" },
@@ -54,9 +56,11 @@ export function NftEligibilityHero() {
             className="rounded-12 ring-2 ring-blue-400/40"
             style={{ boxShadow: "0 0 50px 8px rgba(96,165,250,0.2)" }}
           >
-            <div className="flex h-[220px] w-[220px] items-center justify-center rounded-12 bg-[#1e2235] text-[60px]">
-              🦊
-            </div>
+            <img
+              src={nftMintHeroPng}
+              alt="Foxify NFT"
+              className="h-[220px] w-[220px] rounded-12 bg-[#1e2235] object-cover"
+            />
           </div>
         </div>
       </div>
